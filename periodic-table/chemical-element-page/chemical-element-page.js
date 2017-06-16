@@ -19,9 +19,9 @@ class ChemicalElementPage extends Polymer.Element
     super();
   }
 
-  connectedCallback()
+  ready()
   {
-    super.connectedCallback();
+    super.ready();
 
     let chemicalElements = require('./periodic-table/shared/chemical-elements');
 

@@ -56,16 +56,28 @@
           fill: #80cbc4;
         }
 
+        .ring
+        {
+          fill: none;
+          stroke: #ddd;
+        }
+
+        .electron
+        {
+          fill: #888;
+        }
+
       </style>
     </custom-style>
 
     <svg height="150" width="150">
       <circle cx="75" cy="75" r="15" class$="[[element.group]]"/>
-      <circle cx="75" cy="75" r="50" fill="none" stroke="#ddd"/>
+
+      <g id="ring-group">
+
+      </g>
 
       <g id="electron-group">
-        <circle cx="0" cy="50" r="5" fill="#888"/>
-        <circle cx="0" cy="-50" r="5" fill="#888"/>
 
       </g>
     </svg>

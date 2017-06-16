@@ -26,6 +26,7 @@
 
 .index
 {
+  font-size: 1vw;
   text-align: center;
   padding-top: calc(100% - 1em);
   color: #cfd8dc;

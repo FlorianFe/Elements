@@ -14,14 +14,29 @@
     <custom-style>
       <style>
 
+        paper-card
+        {
+          width: 100%;
+        }
+
         .container
         {
           display: flex;
+          width: 100%;
         }
 
         .item
         {
           flex: 1;
+          padding: 7px;
+        }
+
+        .item-3x
+        {
+          flex: 3;
+          padding: 5px;
+
+          color: #888;
         }
 
         .element-card
@@ -40,80 +55,75 @@
 
         .not-metal
         {
-          background-color: #a5d6a7;
+          color: #a5d6a7;
         }
 
         .alkali-metal
         {
-          background-color: #ffab91;
+          color: #ffab91;
         }
 
         .alkaline-earth-metal
         {
-          background-color: #fff59d;
+          color: #fff59d;
         }
 
         .transition-metal
         {
-          background-color: #ffe082;
+          color: #ffe082;
         }
 
         .metalloid
         {
-          background-color: #b0bec5;
+          color: #b0bec5;
         }
 
         .post-transition-metal
         {
-          background-color: #ffcc80;
+          color: #ffcc80;
         }
 
         .other-nonmetal
         {
-          background-color: #c5e1a5;
+          color: #c5e1a5;
         }
 
         .halogen
         {
-          background-color: #e6ee9c;
+          color: #e6ee9c;
         }
 
         .noble-gas
         {
-          background-color: #80cbc4;
+          color: #80cbc4;
         }
 
       </style>
     </custom-style>
 
+      <paper-card>
+        <div class="container">
+    <!--
+          <div class="item">
 
-      <div class="container">
-  <!--
-        <div class="item">
+            <paper-card class$="[[element.group]] element-card">
+              [[element.symbol]]
+            </paper-card>
 
-          <paper-card class$="[[element.group]] element-card">
-            [[element.symbol]]
-          </paper-card>
-
+          </div>
+    -->
+          <div class="item">
+            <paper-card>
+              <chemical-element-visualisation element="[[element]]"></chemical-element-visualisation>
+            </paper-card>
+          </div>
+          <div class="item-3x">
+            <h4 class$="[[element.group]]">[[element.name]]</h4>
+            <p>electronegativity: [[element.electronegativity]]</p>
+            <p>atomic weight: [[element.atomic-weight]]</p>
+          </div>
         </div>
-  -->
-        <div class="item">
-          <paper-card>
-            <chemical-element-visualisation
-              element="[[element]]"
-            ></chemical-element-visualisation>
-          </paper-card>
-        </div>
-        <div class="item">
-          <paper-card>
-            <h4>[[element.name]]</h4>
-            <h5>Elektronegativität: [[element.electronegativity]]</h5>
-            <h5>Atomgewicht: [[element.atomic-weight]]</h5>
-          </paper-card>
-        </div>
-        <div class="item"></div>
-        <div class="item"></div>
-      </div>
+      </paper-card>
 
   </template>
 
