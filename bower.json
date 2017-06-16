@@ -1,0 +1,28 @@
+{
+  "name": "PeriodicTable",
+  "description": "A periodic table viewer desktop app",
+  "main": "main.js",
+  "authors": [
+    "Florian Fechner"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "novel",
+    "polymer",
+    "electron"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "^2.0.1",
+    "paper-card": "PolymerElements/paper-card#^2.0.0",
+    "paper-dialog": "PolymerElements/paper-dialog#^2.0.0",
+    "iron-pages": "PolymerElements/iron-pages#^2.0.0"
+  }
+}

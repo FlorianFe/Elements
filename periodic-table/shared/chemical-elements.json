@@ -1,0 +1,1092 @@
+{
+  "h":
+  {
+    "symbol": "H",
+    "name": "Hydrogen",
+    "group": "other-nonmetal",
+    "atomic-number": 1,
+    "electron-configuration": [1],
+    "electronegativity": 2.2,
+    "atomic-weight": 1.0079,
+    "melting-point": 13.99,
+    "boiling-point": 20.271
+  },
+  "he":
+  {
+    "symbol": "He",
+    "name": "Helium",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": [2],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+
+
+  "li":
+  {
+    "symbol": "Li",
+    "name": "Lithium",
+    "group": "alkali-metal",
+    "atomic-number": 2,
+    "electron-configuration": [2, 1],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "be":
+  {
+    "symbol": "Be",
+    "name": "Beryllium",
+    "group": "alkaline-earth-metal",
+    "atomic-number": 2,
+    "electron-configuration": [2, 2],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "b":
+  {
+    "symbol": "B",
+    "name": "Boron",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": [2, 3],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "c":
+  {
+    "symbol": "C",
+    "name": "Carbon",
+    "group": "other-nonmetal",
+    "atomic-number": 2,
+    "electron-configuration": [2, 4],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "n":
+  {
+    "symbol": "N",
+    "name": "Nitrogen",
+    "group": "other-nonmetal",
+    "atomic-number": 2,
+    "electron-configuration": [2, 5],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "o":
+  {
+    "symbol": "O",
+    "name": "Oxygen",
+    "group": "other-nonmetal",
+    "atomic-number": 2,
+    "electron-configuration": [2, 6],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "f":
+  {
+    "symbol": "F",
+    "name": "Fluorine",
+    "group": "halogen",
+    "atomic-number": 2,
+    "electron-configuration": [2, 7],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ne":
+  {
+    "symbol": "Ne",
+    "name": "Neon",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": [2, 8],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+
+
+  "na":
+  {
+    "symbol": "Na",
+    "name": "Sodium",
+    "group": "alkali-metal",
+    "atomic-number": 2,
+    "electron-configuration": [3, 1],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "mg":
+  {
+    "symbol": "Mg",
+    "name": "Magnesium",
+    "group": "alkaline-earth-metal",
+    "atomic-number": 2,
+    "electron-configuration": [3, 2],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "al":
+  {
+    "symbol": "Al",
+    "name": "Aluminium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": [3, 3],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "si":
+  {
+    "symbol": "Si",
+    "name": "Silicon",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": [3, 4],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "p":
+  {
+    "symbol": "P",
+    "name": "Phosphorus",
+    "group": "other-nonmetal",
+    "atomic-number": 2,
+    "electron-configuration": [3, 5],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "s":
+  {
+    "symbol": "S",
+    "name": "Sulfur",
+    "group": "other-nonmetal",
+    "atomic-number": 2,
+    "electron-configuration": [3, 6],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "cl":
+  {
+    "symbol": "Cl",
+    "name": "Chlorine",
+    "group": "halogen",
+    "atomic-number": 2,
+    "electron-configuration": [3, 7],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ar":
+  {
+    "symbol": "Ar",
+    "name": "Argon",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": [3, 8],
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+
+
+  "k":
+  {
+    "symbol": "K",
+    "name": "Potasium",
+    "group": "alkali-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ca":
+  {
+    "symbol": "Ca",
+    "name": "Calcium",
+    "group": "alkaline-earth-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "sc":
+  {
+    "symbol": "Sc",
+    "name": "Scandium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ti":
+  {
+    "symbol": "Ti",
+    "name": "Titanium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "v":
+  {
+    "symbol": "V",
+    "name": "Vanadium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "cr":
+  {
+    "symbol": "Cr",
+    "name": "Chromium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "mn":
+  {
+    "symbol": "Mn",
+    "name": "Manganese",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "fe":
+  {
+    "symbol": "Fe",
+    "name": "Iron",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "co":
+  {
+    "symbol": "Co",
+    "name": "Cobalt",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ni":
+  {
+    "symbol": "Ni",
+    "name": "Nickel",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "cu":
+  {
+    "symbol": "Cu",
+    "name": "Copper",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "zn":
+  {
+    "symbol": "Zn",
+    "name": "Zinc",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ga":
+  {
+    "symbol": "Ga",
+    "name": "Gallium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ge":
+  {
+    "symbol": "Ge",
+    "name": "Germanium",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "as":
+  {
+    "symbol": "As",
+    "name": "Arsenic",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "se":
+  {
+    "symbol": "Se",
+    "name": "Selenium",
+    "group": "other-nonmetal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "br":
+  {
+    "symbol": "Br",
+    "name": "Bromine",
+    "group": "halogen",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "kr":
+  {
+    "symbol": "Kr",
+    "name": "Krypton",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+
+
+  "rb":
+  {
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "group": "alkali-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "sr":
+  {
+    "symbol": "Sr",
+    "name": "Strontium",
+    "group": "alkaline-earth-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "y":
+  {
+    "symbol": "Y",
+    "name": "Yttrium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "zr":
+  {
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "nb":
+  {
+    "symbol": "Nb",
+    "name": "Niobium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "mo":
+  {
+    "symbol": "Mo",
+    "name": "Molybdenum",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "tc":
+  {
+    "symbol": "Tc",
+    "name": "Technetium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ru":
+  {
+    "symbol": "Ru",
+    "name": "Ruthenium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "rh":
+  {
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "pd":
+  {
+    "symbol": "Pd",
+    "name": "Palladium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ag":
+  {
+    "symbol": "Ag",
+    "name": "Silver",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "cd":
+  {
+    "symbol": "Cd",
+    "name": "Cadmium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "in":
+  {
+    "symbol": "In",
+    "name": "Indium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "sn":
+  {
+    "symbol": "Sn",
+    "name": "Tin",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "sb":
+  {
+    "symbol": "Sb",
+    "name": "Antimony",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "te":
+  {
+    "symbol": "Te",
+    "name": "Tellurium",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "i":
+  {
+    "symbol": "I",
+    "name": "Iodine",
+    "group": "halogen",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "xe":
+  {
+    "symbol": "Xe",
+    "name": "Xenon",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+
+  "cs":
+  {
+    "symbol": "Cs",
+    "name": "Caesium",
+    "group": "alkali-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ba":
+  {
+    "symbol": "Ba",
+    "name": "Barium",
+    "group": "alkaline-earth-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "la":
+  {
+    "symbol": "La-Lu",
+    "name": "Lanthanum",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "hf":
+  {
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ta":
+  {
+    "symbol": "Ta",
+    "name": "Tantalium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "w":
+  {
+    "symbol": "W",
+    "name": "Tungsten",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "re":
+  {
+    "symbol": "Re",
+    "name": "Rhenium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "os":
+  {
+    "symbol": "Os",
+    "name": "Osmium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ir":
+  {
+    "symbol": "Ir",
+    "name": "Iridium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "pt":
+  {
+    "symbol": "Pt",
+    "name": "Platinium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "au":
+  {
+    "symbol": "Au",
+    "name": "Gold",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "hg":
+  {
+    "symbol": "Hg",
+    "name": "Mercury",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "tl":
+  {
+    "symbol": "Tl",
+    "name": "Thallium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "pb":
+  {
+    "symbol": "Pb",
+    "name": "Lead",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "bi":
+  {
+    "symbol": "Bi",
+    "name": "Bismuth",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "po":
+  {
+    "symbol": "Po",
+    "name": "Polonium",
+    "group": "metalloid",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "at":
+  {
+    "symbol": "At",
+    "name": "Astatine",
+    "group": "halogen",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "rn":
+  {
+    "symbol": "Rn",
+    "name": "Radon",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+
+  "fr":
+  {
+    "symbol": "Fr",
+    "name": "Francium",
+    "group": "alkali-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ra":
+  {
+    "symbol": "Ra",
+    "name": "Radium",
+    "group": "alkaline-earth-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ac":
+  {
+    "symbol": "Ac-Lr",
+    "name": "Barium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "rf":
+  {
+    "symbol": "Rf",
+    "name": "Rutherfordium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "db":
+  {
+    "symbol": "Db",
+    "name": "Dubnium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "sg":
+  {
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "bh":
+  {
+    "symbol": "Bh",
+    "name": "Bohrium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "hs":
+  {
+    "symbol": "Hs",
+    "name": "Hassium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "mt":
+  {
+    "symbol": "Mt",
+    "name": "Meitnerium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ds":
+  {
+    "symbol": "Ds",
+    "name": "Darmstadtium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "rg":
+  {
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "cn":
+  {
+    "symbol": "Cn",
+    "name": "Copernium",
+    "group": "transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "nh":
+  {
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "fl":
+  {
+    "symbol": "Fl",
+    "name": "Flerovium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "mc":
+  {
+    "symbol": "Mc",
+    "name": "Moscovium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "lv":
+  {
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "group": "post-transition-metal",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "ts":
+  {
+    "symbol": "Ts",
+    "name": "Tennessine",
+    "group": "halogen",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  },
+  "og":
+  {
+    "symbol": "Og",
+    "name": "Oganesson",
+    "group": "noble-gas",
+    "atomic-number": 2,
+    "electron-configuration": "2",
+    "electronegativity": "?",
+    "atomic-weight": 4.0026,
+    "melting-point": "?",
+    "boiling-point": "?"
+  }
+}

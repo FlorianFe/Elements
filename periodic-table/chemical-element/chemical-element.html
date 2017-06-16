@@ -1,0 +1,94 @@
+<!-- Imports Polymer -->
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<!-- Imports Dependencies -->
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-styles/shadow.html">
+<link rel="import" href="../../bower_components/paper-dialog/paper-dialog.html">
+
+<!-- Defines element markup -->
+<dom-module id="chemical-element">
+
+  <template>
+
+    <custom-style>
+      <style>
+
+        .element-card
+        {
+          width: 100%;
+          height: 100%;
+          padding: calc(50% - 1em);
+          padding-top: calc(50% - (1em/2));
+          padding-bottom: calc(50% - (1em/2));
+          font-size: 3vw;
+          font-family: sans-serif;
+          color: white;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .element-card:hover
+        {
+          @apply --shadow-elevation-6dp;
+        }
+
+        .not-metal
+        {
+          background-color: #a5d6a7;
+        }
+
+        .alkali-metal
+        {
+          background-color: #ffab91;
+        }
+
+        .alkaline-earth-metal
+        {
+          background-color: #fff59d;
+        }
+
+        .transition-metal
+        {
+          background-color: #ffe082;
+        }
+
+        .metalloid
+        {
+          background-color: #b0bec5;
+        }
+
+        .post-transition-metal
+        {
+          background-color: #ffcc80;
+        }
+
+        .other-nonmetal
+        {
+          background-color: #c5e1a5;
+        }
+
+        .halogen
+        {
+          background-color: #e6ee9c;
+        }
+
+        .noble-gas
+        {
+          background-color: #80cbc4;
+        }
+
+      </style>
+    </custom-style>
+
+    <paper-card
+      id="paper-card"
+      class$="[[element.group]] element-card"
+    >
+      [[element.symbol]]
+    </paper-card>
+  </template>
+
+  <!-- Loads JavaScript -->
+  <script src="chemical-element.js"></script>
+</dom-module>

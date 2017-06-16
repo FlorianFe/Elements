@@ -1,0 +1,76 @@
+<!-- Imports Polymer -->
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<!-- Imports Dependencies -->
+
+<!-- Defines element markup -->
+<dom-module id="chemical-element-visualisation">
+
+  <template>
+
+    <custom-style>
+      <style>
+
+        .not-metal
+        {
+          fill: #a5d6a7;
+        }
+
+        .alkali-metal
+        {
+          fill: #ffab91;
+        }
+
+        .alkaline-earth-metal
+        {
+          fill: #fff59d;
+        }
+
+        .transition-metal
+        {
+          fill: #ffe082;
+        }
+
+        .metalloid
+        {
+          fill: #b0bec5;
+        }
+
+        .post-transition-metal
+        {
+          fill: #ffcc80;
+        }
+
+        .other-nonmetal
+        {
+          fill: #c5e1a5;
+        }
+
+        .halogen
+        {
+          fill: #e6ee9c;
+        }
+
+        .noble-gas
+        {
+          fill: #80cbc4;
+        }
+
+      </style>
+    </custom-style>
+
+    <svg height="150" width="150">
+      <circle cx="75" cy="75" r="15" class$="[[element.group]]"/>
+      <circle cx="75" cy="75" r="50" fill="none" stroke="#ddd"/>
+
+      <g id="electron-group">
+        <circle cx="0" cy="50" r="5" fill="#888"/>
+        <circle cx="0" cy="-50" r="5" fill="#888"/>
+
+      </g>
+    </svg>
+  </template>
+
+  <!-- Loads JavaScript -->
+  <script src="chemical-element-visualisation.js"></script>
+</dom-module>

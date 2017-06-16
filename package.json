@@ -1,0 +1,37 @@
+{
+  "name": "PeriodicTable",
+  "version": "1.0.0",
+  "description": "A periodic table viewer desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "ELECTRON_ENABLE_LOGGING=1 electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "de.florianfe.easytongue",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "icon@2x"
+    },
+    "win": {
+      "icon": "build/icon"
+    }
+  },
+  "repository": "https://github.com/FlorianFe/EasyTongue",
+  "keywords": [
+    "translation",
+    "polymer",
+    "electron"
+  ],
+  "author": "Florian Fechner",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  },
+  "dependencies": {
+    "electron-localshortcut": "^1.1.0",
+    "ipc": "0.0.1",
+    "path": "^0.12.7"
+  }
+}

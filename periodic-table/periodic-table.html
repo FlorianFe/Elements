@@ -1,0 +1,247 @@
+<!-- Imports Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Imports Dependencies -->
+<link rel="import" href="../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+
+<link rel="import" href="chemical-element/chemical-element.html">
+<link rel="import" href="chemical-element-page/chemical-element-page.html">
+
+<!-- Defines element markup -->
+<dom-module id="periodic-table">
+
+  <!-- Loads styles -->
+  <link rel="import" type="css" href="periodic-table.css">
+
+  <template>
+    <div>
+      <div class="container">
+        <div class="item"><div class="index">A I</div></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"><div class="index">A VIII</div></div>
+      </div>
+      <div class="container">
+        <div class="left-box">
+          <div class="container">
+            <div class="item"><chemical-element symbol="h"></chemical-element></div>
+            <div class="item"><div class="index">A II</div></div>
+            <div class="item"></div>
+          </div>
+          <div class="container">
+            <div class="item"><chemical-element symbol="li"></chemical-element></div>
+            <div class="item"><chemical-element symbol="be"></chemical-element></div>
+            <div class="item"></div>
+          </div>
+        </div>
+        <div class="middle-box">
+          <iron-pages
+            selected="[[selectedElementSymbol]]"
+            attr-for-Selected="symbol"
+            fallback-selection="0"
+          >
+          <chemical-element-page symbol="h"></chemical-element-page>
+          <chemical-element-page symbol="he"></chemical-element-page>
+
+          <chemical-element-page symbol="li"></chemical-element-page>
+          <chemical-element-page symbol="be"></chemical-element-page>
+          <chemical-element-page symbol="b"></chemical-element-page>
+          <chemical-element-page symbol="c"></chemical-element-page>
+          <chemical-element-page symbol="n"></chemical-element-page>
+          <chemical-element-page symbol="o"></chemical-element-page>
+          <chemical-element-page symbol="f"></chemical-element-page>
+          <chemical-element-page symbol="ne"></chemical-element-page>
+
+          <chemical-element-page symbol="na"></chemical-element-page>
+          <chemical-element-page symbol="mg"></chemical-element-page>
+          <chemical-element-page symbol="al"></chemical-element-page>
+          <chemical-element-page symbol="si"></chemical-element-page>
+          <chemical-element-page symbol="p"></chemical-element-page>
+          <chemical-element-page symbol="s"></chemical-element-page>
+          <chemical-element-page symbol="cl"></chemical-element-page>
+          <chemical-element-page symbol="ar"></chemical-element-page>
+
+          <chemical-element-page symbol="k"></chemical-element-page>
+          <chemical-element-page symbol="ca"></chemical-element-page>
+          <chemical-element-page symbol="sc"></chemical-element-page>
+          <chemical-element-page symbol="ti"></chemical-element-page>
+          <chemical-element-page symbol="v"></chemical-element-page>
+          <chemical-element-page symbol="cr"></chemical-element-page>
+          <chemical-element-page symbol="mn"></chemical-element-page>
+          <chemical-element-page symbol="fe"></chemical-element-page>
+          <chemical-element-page symbol="co"></chemical-element-page>
+          <chemical-element-page symbol="ni"></chemical-element-page>
+          <chemical-element-page symbol="cu"></chemical-element-page>
+          <chemical-element-page symbol="zn"></chemical-element-page>
+          <chemical-element-page symbol="ga"></chemical-element-page>
+          <chemical-element-page symbol="ge"></chemical-element-page>
+          <chemical-element-page symbol="as"></chemical-element-page>
+          <chemical-element-page symbol="se"></chemical-element-page>
+          <chemical-element-page symbol="br"></chemical-element-page>
+          <chemical-element-page symbol="kr"></chemical-element-page>
+          </iron-pages>
+        </div>
+        <div class="right-box">
+          <div class="container">
+            <div class="item"></div>
+            <div class="item"><div class="index">A III</div></div>
+            <div class="item"><div class="index">A IV</div></div>
+            <div class="item"><div class="index">A V</div></div>
+            <div class="item"><div class="index">A VI</div></div>
+            <div class="item"><div class="index">A VII</div></div>
+            <div class="item"><chemical-element symbol="he"></chemical-element></div>
+          </div>
+          <div class="container">
+            <div class="item"></div>
+            <div class="item"><chemical-element symbol="b"></chemical-element></div>
+            <div class="item"><chemical-element symbol="c"></chemical-element></div>
+            <div class="item"><chemical-element symbol="n"></chemical-element></div>
+            <div class="item"><chemical-element symbol="o"></chemical-element></div>
+            <div class="item"><chemical-element symbol="f"></chemical-element></div>
+            <div class="item"><chemical-element symbol="ne"></chemical-element></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="item"><chemical-element symbol="na"></chemical-element></div>
+        <div class="item"><chemical-element symbol="mg"></chemical-element></div>
+        <div class="item"><div class="index">B III</div></div>
+        <div class="item"><div class="index">B IV</div></div>
+        <div class="item"><div class="index">B V</div></div>
+        <div class="item"><div class="index">B VI</div></div>
+        <div class="item"><div class="index">B VII</div></div>
+        <div class="item"><div class="index">B VIII</div></div>
+        <div class="item"><div class="index">B VIII</div></div>
+        <div class="item"><div class="index">B VIII</div></div>
+        <div class="item"><div class="index">B II</div></div>
+        <div class="item"><div class="index">B I</div></div>
+        <div class="item"><chemical-element symbol="al"></chemical-element></div>
+        <div class="item"><chemical-element symbol="si"></chemical-element></div>
+        <div class="item"><chemical-element symbol="p"></chemical-element></div>
+        <div class="item"><chemical-element symbol="s"></chemical-element></div>
+        <div class="item"><chemical-element symbol="cl"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ar"></chemical-element></div>
+      </div>
+      <div class="container">
+        <div class="item"><chemical-element symbol="k"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ca"></chemical-element></div>
+        <div class="item"><chemical-element symbol="sc"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ti"></chemical-element></div>
+        <div class="item"><chemical-element symbol="v"></chemical-element></div>
+        <div class="item"><chemical-element symbol="cr"></chemical-element></div>
+        <div class="item"><chemical-element symbol="mn"></chemical-element></div>
+        <div class="item"><chemical-element symbol="fe"></chemical-element></div>
+        <div class="item"><chemical-element symbol="co"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ni"></chemical-element></div>
+        <div class="item"><chemical-element symbol="cu"></chemical-element></div>
+        <div class="item"><chemical-element symbol="zn"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ga"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ge"></chemical-element></div>
+        <div class="item"><chemical-element symbol="as"></chemical-element></div>
+        <div class="item"><chemical-element symbol="se"></chemical-element></div>
+        <div class="item"><chemical-element symbol="br"></chemical-element></div>
+        <div class="item"><chemical-element symbol="kr"></chemical-element></div>
+      </div>
+      <div class="container">
+        <div class="item"><chemical-element symbol="rb"></chemical-element></div>
+        <div class="item"><chemical-element symbol="sr"></chemical-element></div>
+        <div class="item"><chemical-element symbol="y"></chemical-element></div>
+        <div class="item"><chemical-element symbol="zr"></chemical-element></div>
+        <div class="item"><chemical-element symbol="nb"></chemical-element></div>
+        <div class="item"><chemical-element symbol="mo"></chemical-element></div>
+        <div class="item"><chemical-element symbol="tc"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ru"></chemical-element></div>
+        <div class="item"><chemical-element symbol="rh"></chemical-element></div>
+        <div class="item"><chemical-element symbol="pd"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ag"></chemical-element></div>
+        <div class="item"><chemical-element symbol="cd"></chemical-element></div>
+        <div class="item"><chemical-element symbol="in"></chemical-element></div>
+        <div class="item"><chemical-element symbol="sn"></chemical-element></div>
+        <div class="item"><chemical-element symbol="sb"></chemical-element></div>
+        <div class="item"><chemical-element symbol="te"></chemical-element></div>
+        <div class="item"><chemical-element symbol="i"></chemical-element></div>
+        <div class="item"><chemical-element symbol="xe"></chemical-element></div>
+      </div>
+      <div class="container">
+        <div class="item"><chemical-element symbol="cs"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ba"></chemical-element></div>
+        <div class="item"><paper-card class="lan­thanide">*</paper-card></div>
+        <div class="item"><chemical-element symbol="hf"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ta"></chemical-element></div>
+        <div class="item"><chemical-element symbol="w"></chemical-element></div>
+        <div class="item"><chemical-element symbol="re"></chemical-element></div>
+        <div class="item"><chemical-element symbol="os"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ir"></chemical-element></div>
+        <div class="item"><chemical-element symbol="pt"></chemical-element></div>
+        <div class="item"><chemical-element symbol="au"></chemical-element></div>
+        <div class="item"><chemical-element symbol="hg"></chemical-element></div>
+        <div class="item"><chemical-element symbol="tl"></chemical-element></div>
+        <div class="item"><chemical-element symbol="pb"></chemical-element></div>
+        <div class="item"><chemical-element symbol="bi"></chemical-element></div>
+        <div class="item"><chemical-element symbol="po"></chemical-element></div>
+        <div class="item"><chemical-element symbol="at"></chemical-element></div>
+        <div class="item"><chemical-element symbol="rn"></chemical-element></div>
+      </div>
+      <div class="container">
+        <div class="item"><chemical-element symbol="fr"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ra"></chemical-element></div>
+        <div class="item"><paper-card class="actinide">**</paper-card></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+
+      <!--
+
+        <div class="item"><chemical-element symbol="rf"></chemical-element></div>
+        <div class="item"><chemical-element symbol="db"></chemical-element></div>
+        <div class="item"><chemical-element symbol="sg"></chemical-element></div>
+        <div class="item"><chemical-element symbol="bh"></chemical-element></div>
+        <div class="item"><chemical-element symbol="hs"></chemical-element></div>
+        <div class="item"><chemical-element symbol="mt"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ds"></chemical-element></div>
+        <div class="item"><chemical-element symbol="rg"></chemical-element></div>
+        <div class="item"><chemical-element symbol="cn"></chemical-element></div>
+        <div class="item"><chemical-element symbol="nh"></chemical-element></div>
+        <div class="item"><chemical-element symbol="fl"></chemical-element></div>
+        <div class="item"><chemical-element symbol="mc"></chemical-element></div>
+        <div class="item"><chemical-element symbol="lv"></chemical-element></div>
+        <div class="item"><chemical-element symbol="ts"></chemical-element></div>
+        <div class="item"><chemical-element symbol="og"></chemical-element></div>
+      -->
+
+      </div>
+    </div>
+  </template>
+
+  <!-- Loads JavaScript -->
+  <script src="periodic-table.js"></script>
+</dom-module>
