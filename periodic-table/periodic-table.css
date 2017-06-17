@@ -49,10 +49,10 @@ paper-card
 
 .lan­thanide
 {
-  background-color: var(--lanthanide-color);
+  background-color: var(--lanthanide-background-color);
 }
 
 .actinide
 {
-  background-color: var(--actinide-color);
+  background-color: var(--actinide-background-color);
 }
