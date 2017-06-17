@@ -1,5 +1,5 @@
 {
-  "name": "PeriodicTable",
+  "name": "Elements",
   "version": "1.0.0",
   "description": "A periodic table viewer desktop app",
   "main": "main.js",
@@ -18,7 +18,7 @@
       "icon": "build/icon"
     }
   },
-  "repository": "https://github.com/FlorianFe/EasyTongue",
+  "repository": "https://github.com/FlorianFe/Elements",
   "keywords": [
     "translation",
     "polymer",
@@ -27,11 +27,13 @@
   "author": "Florian Fechner",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "electron-builder": "^19.4.2"
   },
   "dependencies": {
     "electron-localshortcut": "^1.1.0",
     "ipc": "0.0.1",
+    "paper-button": "github:PolymerElements/paper-button",
     "path": "^0.12.7"
   }
 }

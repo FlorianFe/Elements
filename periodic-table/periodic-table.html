@@ -15,6 +15,27 @@
   <link rel="import" type="css" href="periodic-table.css">
 
   <template>
+
+    <custom-style>
+      <style>
+
+        :host
+        {
+          --alkali-metal-color: #ffab91;
+          --alkaline-earth-metal-color: #fff59d;
+          --transition-metal-color: #ffe082;
+          --metalloid-color: #b0bec5;
+          --post-transition-metal-color: #ffcc80;
+          --other-nonmetal-color: #c5e1a5;
+          --lanthanide-color: #b39ddb;
+          --actinide-color: #f48fb1;
+          --halogen-color: #e6ee9c;
+          --noble-gas-color: #80cbc4;
+        }
+
+      </style>
+    </custom-style>
+
     <div>
       <div class="container">
         <div class="item"><div class="index">A I</div></div>
@@ -41,13 +62,13 @@
       <div class="container">
         <div class="left-box">
           <div class="container">
-            <div class="item"><chemical-element symbol="h"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="h"></chemical-element></div>
             <div class="item"><div class="index">A II</div></div>
             <div class="item"></div>
           </div>
           <div class="container">
-            <div class="item"><chemical-element symbol="li"></chemical-element></div>
-            <div class="item"><chemical-element symbol="be"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="li"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="be"></chemical-element></div>
             <div class="item"></div>
           </div>
         </div>
@@ -57,45 +78,119 @@
             attr-for-Selected="symbol"
             fallback-selection="0"
           >
-            <chemical-element-page symbol="h"></chemical-element-page>
-            <chemical-element-page symbol="he"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="h"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" visualisation-size="[[visualisationSize]]"symbol="he"></chemical-element-page>
 
-            <chemical-element-page symbol="li"></chemical-element-page>
-            <chemical-element-page symbol="be"></chemical-element-page>
-            <chemical-element-page symbol="b"></chemical-element-page>
-            <chemical-element-page symbol="c"></chemical-element-page>
-            <chemical-element-page symbol="n"></chemical-element-page>
-            <chemical-element-page symbol="o"></chemical-element-page>
-            <chemical-element-page symbol="f"></chemical-element-page>
-            <chemical-element-page symbol="ne"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" visualisation-size="[[visualisationSize]]"symbol="li"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="be"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="b"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="c"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="n"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="o"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="f"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="ne"></chemical-element-page>
 
-            <chemical-element-page symbol="na"></chemical-element-page>
-            <chemical-element-page symbol="mg"></chemical-element-page>
-            <chemical-element-page symbol="al"></chemical-element-page>
-            <chemical-element-page symbol="si"></chemical-element-page>
-            <chemical-element-page symbol="p"></chemical-element-page>
-            <chemical-element-page symbol="s"></chemical-element-page>
-            <chemical-element-page symbol="cl"></chemical-element-page>
-            <chemical-element-page symbol="ar"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="na"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="mg"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="al"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="si"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="p"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="s"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="cl"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="ar"></chemical-element-page>
 
-            <chemical-element-page symbol="k"></chemical-element-page>
-            <chemical-element-page symbol="ca"></chemical-element-page>
-            <chemical-element-page symbol="sc"></chemical-element-page>
-            <chemical-element-page symbol="ti"></chemical-element-page>
-            <chemical-element-page symbol="v"></chemical-element-page>
-            <chemical-element-page symbol="cr"></chemical-element-page>
-            <chemical-element-page symbol="mn"></chemical-element-page>
-            <chemical-element-page symbol="fe"></chemical-element-page>
-            <chemical-element-page symbol="co"></chemical-element-page>
-            <chemical-element-page symbol="ni"></chemical-element-page>
-            <chemical-element-page symbol="cu"></chemical-element-page>
-            <chemical-element-page symbol="zn"></chemical-element-page>
-            <chemical-element-page symbol="ga"></chemical-element-page>
-            <chemical-element-page symbol="ge"></chemical-element-page>
-            <chemical-element-page symbol="as"></chemical-element-page>
-            <chemical-element-page symbol="se"></chemical-element-page>
-            <chemical-element-page symbol="br"></chemical-element-page>
-            <chemical-element-page symbol="kr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="k"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ca"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sc"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ti"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="v"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="mn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="fe"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="co"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ni"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="zn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ga"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ge"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="as"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="se"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="br"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="kr"></chemical-element-page>
+
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="rb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="y"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="zr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="nb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="mo"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tc"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ru"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="rh"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ag"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="in"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="te"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="i"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="xe"></chemical-element-page>
+
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cs"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ba"></chemical-element-page>
+            <!-- F Group -->
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="hf"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ta"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="w"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="re"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="os"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ir"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pt"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="au"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="hg"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tl"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="bi"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="po"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="at"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="rn"></chemical-element-page>
+
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="fr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ra"></chemical-element-page>
+            <!-- F Group -->
+
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="la"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ce"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="nd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="eu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="gd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="dy"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ho"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="er"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="yb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="lu"></chemical-element-page>
+
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ac"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="th"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pa"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="u"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="np"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="am"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="bk"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cf"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="es"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="fm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="md"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="no"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="lr"></chemical-element-page>
           </iron-pages>
         </div>
         <div class="right-box">
@@ -106,22 +201,22 @@
             <div class="item"><div class="index">A V</div></div>
             <div class="item"><div class="index">A VI</div></div>
             <div class="item"><div class="index">A VII</div></div>
-            <div class="item"><chemical-element symbol="he"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="he"></chemical-element></div>
           </div>
           <div class="container">
             <div class="item"></div>
-            <div class="item"><chemical-element symbol="b"></chemical-element></div>
-            <div class="item"><chemical-element symbol="c"></chemical-element></div>
-            <div class="item"><chemical-element symbol="n"></chemical-element></div>
-            <div class="item"><chemical-element symbol="o"></chemical-element></div>
-            <div class="item"><chemical-element symbol="f"></chemical-element></div>
-            <div class="item"><chemical-element symbol="ne"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="b"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="c"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="n"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="o"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="f"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ne"></chemical-element></div>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="item"><chemical-element symbol="na"></chemical-element></div>
-        <div class="item"><chemical-element symbol="mg"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="na"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="mg"></chemical-element></div>
         <div class="item"><div class="index">B III</div></div>
         <div class="item"><div class="index">B IV</div></div>
         <div class="item"><div class="index">B V</div></div>
@@ -132,76 +227,76 @@
         <div class="item"><div class="index">B VIII</div></div>
         <div class="item"><div class="index">B I</div></div>
         <div class="item"><div class="index">B II</div></div>
-        <div class="item"><chemical-element symbol="al"></chemical-element></div>
-        <div class="item"><chemical-element symbol="si"></chemical-element></div>
-        <div class="item"><chemical-element symbol="p"></chemical-element></div>
-        <div class="item"><chemical-element symbol="s"></chemical-element></div>
-        <div class="item"><chemical-element symbol="cl"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ar"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="al"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="si"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="p"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="s"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cl"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ar"></chemical-element></div>
       </div>
       <div class="container">
-        <div class="item"><chemical-element symbol="k"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ca"></chemical-element></div>
-        <div class="item"><chemical-element symbol="sc"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ti"></chemical-element></div>
-        <div class="item"><chemical-element symbol="v"></chemical-element></div>
-        <div class="item"><chemical-element symbol="cr"></chemical-element></div>
-        <div class="item"><chemical-element symbol="mn"></chemical-element></div>
-        <div class="item"><chemical-element symbol="fe"></chemical-element></div>
-        <div class="item"><chemical-element symbol="co"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ni"></chemical-element></div>
-        <div class="item"><chemical-element symbol="cu"></chemical-element></div>
-        <div class="item"><chemical-element symbol="zn"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ga"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ge"></chemical-element></div>
-        <div class="item"><chemical-element symbol="as"></chemical-element></div>
-        <div class="item"><chemical-element symbol="se"></chemical-element></div>
-        <div class="item"><chemical-element symbol="br"></chemical-element></div>
-        <div class="item"><chemical-element symbol="kr"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="k"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ca"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sc"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ti"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="v"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cr"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="mn"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="fe"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="co"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ni"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cu"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="zn"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ga"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ge"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="as"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="se"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="br"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="kr"></chemical-element></div>
       </div>
       <div class="container">
-        <div class="item"><chemical-element symbol="rb"></chemical-element></div>
-        <div class="item"><chemical-element symbol="sr"></chemical-element></div>
-        <div class="item"><chemical-element symbol="y"></chemical-element></div>
-        <div class="item"><chemical-element symbol="zr"></chemical-element></div>
-        <div class="item"><chemical-element symbol="nb"></chemical-element></div>
-        <div class="item"><chemical-element symbol="mo"></chemical-element></div>
-        <div class="item"><chemical-element symbol="tc"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ru"></chemical-element></div>
-        <div class="item"><chemical-element symbol="rh"></chemical-element></div>
-        <div class="item"><chemical-element symbol="pd"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ag"></chemical-element></div>
-        <div class="item"><chemical-element symbol="cd"></chemical-element></div>
-        <div class="item"><chemical-element symbol="in"></chemical-element></div>
-        <div class="item"><chemical-element symbol="sn"></chemical-element></div>
-        <div class="item"><chemical-element symbol="sb"></chemical-element></div>
-        <div class="item"><chemical-element symbol="te"></chemical-element></div>
-        <div class="item"><chemical-element symbol="i"></chemical-element></div>
-        <div class="item"><chemical-element symbol="xe"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="rb"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sr"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="y"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="zr"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="nb"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="mo"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="tc"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ru"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="rh"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pd"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ag"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cd"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="in"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sn"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sb"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="te"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="i"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="xe"></chemical-element></div>
       </div>
       <div class="container">
-        <div class="item"><chemical-element symbol="cs"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ba"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cs"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ba"></chemical-element></div>
         <div class="item"><paper-card class="lan­thanide">*</paper-card></div>
-        <div class="item"><chemical-element symbol="hf"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ta"></chemical-element></div>
-        <div class="item"><chemical-element symbol="w"></chemical-element></div>
-        <div class="item"><chemical-element symbol="re"></chemical-element></div>
-        <div class="item"><chemical-element symbol="os"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ir"></chemical-element></div>
-        <div class="item"><chemical-element symbol="pt"></chemical-element></div>
-        <div class="item"><chemical-element symbol="au"></chemical-element></div>
-        <div class="item"><chemical-element symbol="hg"></chemical-element></div>
-        <div class="item"><chemical-element symbol="tl"></chemical-element></div>
-        <div class="item"><chemical-element symbol="pb"></chemical-element></div>
-        <div class="item"><chemical-element symbol="bi"></chemical-element></div>
-        <div class="item"><chemical-element symbol="po"></chemical-element></div>
-        <div class="item"><chemical-element symbol="at"></chemical-element></div>
-        <div class="item"><chemical-element symbol="rn"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="hf"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ta"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="w"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="re"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="os"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ir"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pt"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="au"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="hg"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="tl"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pb"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="bi"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="po"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="at"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="rn"></chemical-element></div>
       </div>
       <div class="container">
-        <div class="item"><chemical-element symbol="fr"></chemical-element></div>
-        <div class="item"><chemical-element symbol="ra"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="fr"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ra"></chemical-element></div>
         <div class="item"><paper-card class="actinide">**</paper-card></div>
         <div class="item"></div>
         <div class="item"></div>
@@ -236,9 +331,52 @@
         <div class="item"><chemical-element symbol="lv"></chemical-element></div>
         <div class="item"><chemical-element symbol="ts"></chemical-element></div>
         <div class="item"><chemical-element symbol="og"></chemical-element></div>
+
       -->
 
       </div>
+      <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="la"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ce"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pr"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="nd"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pm"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sm"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="eu"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="gd"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="tb"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="dy"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ho"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="er"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="tm"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="yb"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="lu"></chemical-element></div>
+      </div>
+
+      <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ac"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="th"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pa"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="u"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="np"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="pu"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="am"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cm"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="bk"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cf"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="es"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="fm"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="md"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="no"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="lr"></chemical-element></div>
+      </div>
+
     </div>
   </template>
 

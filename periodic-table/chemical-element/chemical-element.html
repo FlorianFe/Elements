@@ -30,52 +30,29 @@
 
         .element-card:hover
         {
+          @apply --shadow-elevation-4dp;
+        }
+
+        .not-metal              { background-color: var(--non-metal-color);              }
+        .alkali-metal           { background-color: var(--alkali-metal-color);           }
+        .alkaline-earth-metal   { background-color: var(--alkaline-earth-metal-color);   }
+        .transition-metal       { background-color: var(--transition-metal-color);       }
+        .metalloid              { background-color: var(--metalloid-color);              }
+        .post-transition-metal  { background-color: var(--post-transition-metal-color);  }
+        .other-nonmetal         { background-color: var(--other-nonmetal-color);         }
+        .lanthanide             { background-color: var(--lanthanide-color);             }
+        .actinide               { background-color: var(--actinide-color);               }
+        .halogen                { background-color: var(--halogen-color);                }
+        .noble-gas              { background-color: var(--noble-gas-color);              }
+
+        .selected
+        {
           @apply --shadow-elevation-6dp;
         }
 
-        .not-metal
+        .selected:hover
         {
-          background-color: #a5d6a7;
-        }
-
-        .alkali-metal
-        {
-          background-color: #ffab91;
-        }
-
-        .alkaline-earth-metal
-        {
-          background-color: #fff59d;
-        }
-
-        .transition-metal
-        {
-          background-color: #ffe082;
-        }
-
-        .metalloid
-        {
-          background-color: #b0bec5;
-        }
-
-        .post-transition-metal
-        {
-          background-color: #ffcc80;
-        }
-
-        .other-nonmetal
-        {
-          background-color: #c5e1a5;
-        }
-
-        .halogen
-        {
-          background-color: #e6ee9c;
-        }
-
-        .noble-gas
-        {
-          background-color: #80cbc4;
+          @apply --shadow-elevation-6dp;
         }
 
       </style>

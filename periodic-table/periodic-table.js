@@ -27,7 +27,6 @@ class PeriodicTable extends Polymer.Element
       chemicalElement.addEventListener("chemical-element-selected", (data) =>
       {
         this.selectedElementSymbol = data.detail.symbol;
-        console.log(this.selectedElementSymbol);
       });
     });
 

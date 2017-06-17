@@ -10,8 +10,14 @@ class ChemicalElement extends Polymer.Element
   {
     return {
       symbol: String,
-      element: Object
+      element: Object,
+      selectedSymbol: String
     }
+  }
+
+  static get observers()
+  {
+    return ['_onSelectedSymbolChange(selectedSymbol)'];
   }
 
   constructor()
@@ -31,6 +37,18 @@ class ChemicalElement extends Polymer.Element
     {
       this.dispatchEvent(new CustomEvent('chemical-element-selected', {detail: {symbol: this.symbol}}));
     });
+  }
+
+  _onSelectedSymbolChange()
+  {
+    if(this.selectedSymbol === this.symbol)
+    {
+      this.$["paper-card"].classList.add("selected");
+    }
+    else
+    {
+      this.$["paper-card"].classList.remove("selected");
+    }
   }
 }
 

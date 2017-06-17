@@ -11,50 +11,17 @@
     <custom-style>
       <style>
 
-        .not-metal
-        {
-          fill: #a5d6a7;
-        }
-
-        .alkali-metal
-        {
-          fill: #ffab91;
-        }
-
-        .alkaline-earth-metal
-        {
-          fill: #fff59d;
-        }
-
-        .transition-metal
-        {
-          fill: #ffe082;
-        }
-
-        .metalloid
-        {
-          fill: #b0bec5;
-        }
-
-        .post-transition-metal
-        {
-          fill: #ffcc80;
-        }
-
-        .other-nonmetal
-        {
-          fill: #c5e1a5;
-        }
-
-        .halogen
-        {
-          fill: #e6ee9c;
-        }
-
-        .noble-gas
-        {
-          fill: #80cbc4;
-        }
+        .not-metal              { fill: var(--non-metal-color);              }
+        .alkali-metal           { fill: var(--alkali-metal-color);           }
+        .alkaline-earth-metal   { fill: var(--alkaline-earth-metal-color);   }
+        .transition-metal       { fill: var(--transition-metal-color);       }
+        .metalloid              { fill: var(--metalloid-color);              }
+        .post-transition-metal  { fill: var(--post-transition-metal-color);  }
+        .other-nonmetal         { fill: var(--other-nonmetal-color);         }
+        .lanthanide             { fill: var(--lanthanide-color);             }
+        .actinide               { fill: var(--actinide-color);               }
+        .halogen                { fill: var(--halogen-color);                }
+        .noble-gas              { fill: var(--noble-gas-color);              }
 
         .ring
         {
@@ -67,11 +34,36 @@
           fill: #888;
         }
 
+        .electron-background
+        {
+          fill: #fff;
+        }
+
+        .s-group
+        {
+          fill: #2196f3;
+        }
+
+        .p-group
+        {
+          fill: #ff9800;
+        }
+
+        .d-group
+        {
+          fill: #4caf50;
+        }
+
+        .f-group
+        {
+          fill: #e91e63;
+        }
+
       </style>
     </custom-style>
 
-    <svg height="150" width="150">
-      <circle cx="75" cy="75" r="15" class$="[[element.group]]"/>
+    <svg version="1.1" viewBox="0 0 500 500">
+      <circle cx$="[[divide(size, 2)]]" cy$="[[divide(size, 2)]]" r$="[[divide(size, 10)]]" class$="[[element.group]]"/>
 
       <g id="ring-group">
 

@@ -1,5 +1,5 @@
 {
-  "name": "PeriodicTable",
+  "name": "Elements",
   "description": "A periodic table viewer desktop app",
   "main": "main.js",
   "authors": [
@@ -23,6 +23,8 @@
     "polymer": "^2.0.1",
     "paper-card": "PolymerElements/paper-card#^2.0.0",
     "paper-dialog": "PolymerElements/paper-dialog#^2.0.0",
-    "iron-pages": "PolymerElements/iron-pages#^2.0.0"
+    "iron-pages": "PolymerElements/iron-pages#^2.0.0",
+    "iron-icons": "PolymerElements/iron-icons#^2.0.1",
+    "iron-icon": "PolymerElements/iron-icon#^2.0.0"
   }
 }

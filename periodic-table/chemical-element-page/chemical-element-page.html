@@ -3,6 +3,9 @@
 
 <!-- Imports Dependencies -->
 <link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../bower_components/iron-icons/image-icons.html">
 
 <link rel="import" href="chemical-element-visualisation/chemical-element-visualisation.html">
 
@@ -17,6 +20,7 @@
         paper-card
         {
           width: 100%;
+          padding: 0.25vw;
         }
 
         .container
@@ -28,99 +32,75 @@
         .item
         {
           flex: 1;
-          padding: 7px;
+          padding: 0.2vw;
         }
 
         .item-3x
         {
           flex: 3;
-          padding: 5px;
-
+          padding: 0.5vw;
           color: #888;
         }
 
-        .element-card
+        table
         {
+          font-size: 1vw;
           width: 100%;
-          height: 100%;
-          padding: calc(50% - 1em);
-          padding-top: calc(50% - (1em/2));
-          padding-bottom: calc(50% - (1em/2));
-          font-size: 3vw;
-          font-family: sans-serif;
-          color: white;
-          text-align: center;
-          cursor: pointer;
         }
 
-        .not-metal
+        b
         {
-          color: #a5d6a7;
+          font-size: 1vw;
         }
 
-        .alkali-metal
+        td
         {
-          color: #ffab91;
+          width: 25%;
         }
 
-        .alkaline-earth-metal
-        {
-          color: #fff59d;
-        }
-
-        .transition-metal
-        {
-          color: #ffe082;
-        }
-
-        .metalloid
-        {
-          color: #b0bec5;
-        }
-
-        .post-transition-metal
-        {
-          color: #ffcc80;
-        }
-
-        .other-nonmetal
-        {
-          color: #c5e1a5;
-        }
-
-        .halogen
-        {
-          color: #e6ee9c;
-        }
-
-        .noble-gas
-        {
-          color: #80cbc4;
-        }
+        .not-metal              { color: var(--non-metal-color);              }
+        .alkali-metal           { color: var(--alkali-metal-color);           }
+        .alkaline-earth-metal   { color: var(--alkaline-earth-metal-color);   }
+        .transition-metal       { color: var(--transition-metal-color);       }
+        .metalloid              { color: var(--metalloid-color);              }
+        .post-transition-metal  { color: var(--post-transition-metal-color);  }
+        .other-nonmetal         { color: var(--other-nonmetal-color);         }
+        .lanthanide             { color: var(--lanthanide-color);             }
+        .actinide               { color: var(--actinide-color);               }
+        .halogen                { color: var(--halogen-color);                }
+        .noble-gas              { color: var(--noble-gas-color);              }
 
       </style>
     </custom-style>
 
       <paper-card>
         <div class="container">
-    <!--
           <div class="item">
-
-            <paper-card class$="[[element.group]] element-card">
-              [[element.symbol]]
-            </paper-card>
-
-          </div>
-    -->
-          <div class="item">
-            <paper-card>
-              <chemical-element-visualisation element="[[element]]"></chemical-element-visualisation>
-            </paper-card>
+            <chemical-element-visualisation element="[[element]]"></chemical-element-visualisation>
           </div>
           <div class="item-3x">
-            <h4 class$="[[element.group]]">[[element.name]]</h4>
-            <p>electronegativity: [[element.electronegativity]]</p>
-            <p>atomic weight: [[element.atomic-weight]]</p>
+            <div id="details-area">
+              <b class$="[[element.group]]">[[element.name]]</b>
+              <br><br>
+              <table>
+                <tr>
+                  <td>atomic number:</td>
+                  <td>[[element.atomic-number]]</td>
+                </tr>
+                <tr>
+                  <td>atomic weight:</td>
+                  <td>[[element.atomic-weight]]</td>
+                  <td>melting point:</td>
+                  <td>[[element.melting-point]] K</td>
+                </tr>
+                <tr>
+                  <td>electronegativity:</td>
+                  <td>[[element.electronegativity]]</td>
+                  <td>boiling point:</td>
+                  <td>[[element.boiling-point]] K</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </paper-card>

@@ -27,6 +27,11 @@ class ChemicalElementPage extends Polymer.Element
 
     this.element = chemicalElements[this.symbol];
   }
+
+  connectedCallback()
+  {
+    super.connectedCallback();
+  }
 }
 
 customElements.define(ChemicalElementPage.is, ChemicalElementPage);
