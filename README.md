@@ -1,4 +1,7 @@
 # Elements
+![Icon](https://florianfe.github.io/screenshots/elements/icon.png)<br>
+
+## Description
 ⚛⚗ A desktop App which shows a periodic table
 
 ## Preview
