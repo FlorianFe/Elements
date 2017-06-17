@@ -32,6 +32,26 @@ class ChemicalElementPage extends Polymer.Element
   {
     super.connectedCallback();
   }
+
+  displayKelvin(kelvin)
+  {
+    if(typeof kelvin == "number")
+    {
+      return kelvin + " K";
+    }
+
+    return "-";
+  }
+
+  displayAtomicWeightIndex(atomicWeigth)
+  {
+    if(atomicWeigth % 1 === 0)
+    {
+      return "mass number";
+    }
+
+    return "atomic weigth";
+  }
 }
 
 customElements.define(ChemicalElementPage.is, ChemicalElementPage);

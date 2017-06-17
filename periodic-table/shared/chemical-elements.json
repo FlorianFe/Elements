@@ -1196,7 +1196,7 @@
       { "s": 2, "p": 4, "d": 0, "f": 0 }
     ],
     "electronegativity": 2.0,
-    "atomic-weight": "-",
+    "atomic-weight": 209,
     "melting-point": 527,
     "boiling-point": 1235
   },
@@ -1215,7 +1215,7 @@
       { "s": 2, "p": 5, "d": 0, "f": 0 }
     ],
     "electronegativity": 2.2,
-    "atomic-weight": "-",
+    "atomic-weight": 210,
     "melting-point": 575,
     "boiling-point": 610
   },
@@ -1234,7 +1234,7 @@
       { "s": 2, "p": 6, "d": 0, "f": 0 }
     ],
     "electronegativity": 2.2,
-    "atomic-weight": "-",
+    "atomic-weight": 222,
     "melting-point": 202,
     "boiling-point": 211.5
   },
@@ -1255,7 +1255,7 @@
       { "s": 1, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": "> 0.79",
-    "atomic-weight": "-",
+    "atomic-weight": 223,
     "melting-point": "300 (?)",
     "boiling-point": "950 (?)"
   },
@@ -1275,7 +1275,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 0.9,
-    "atomic-weight": "-",
+    "atomic-weight": 226,
     "melting-point": 973,
     "boiling-point": 2010
   },
@@ -1552,7 +1552,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": "1.13 (?)",
-    "atomic-weight": "-",
+    "atomic-weight": 145,
     "melting-point": 1315,
     "boiling-point": 3273
   },
@@ -1764,7 +1764,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.1,
-    "atomic-weight": "-",
+    "atomic-weight": 227,
     "melting-point": 1500,
     "boiling-point": 3500
   },
@@ -1844,7 +1844,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.36,
-    "atomic-weight": "-",
+    "atomic-weight": 237,
     "melting-point": 912,
     "boiling-point": 4447
   },
@@ -1864,7 +1864,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.28,
-    "atomic-weight": "-",
+    "atomic-weight": 244,
     "melting-point": 912.5,
     "boiling-point": 3505
   },
@@ -1884,7 +1884,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 243,
     "melting-point": 1449,
     "boiling-point": 2880
   },
@@ -1904,7 +1904,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": "1.3",
-    "atomic-weight": "-",
+    "atomic-weight": 247,
     "melting-point": "1613",
     "boiling-point": "3383"
   },
@@ -1924,7 +1924,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 247,
     "melting-point": 1259,
     "boiling-point": 2900
   },
@@ -1944,7 +1944,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 251,
     "melting-point": 1173,
     "boiling-point": 1743
   },
@@ -1964,7 +1964,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 252,
     "melting-point": 1133,
     "boiling-point": 1269
   },
@@ -1984,7 +1984,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 257,
     "melting-point": 1800,
     "boiling-point": "-"
   },
@@ -2004,7 +2004,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 258,
     "melting-point": 1100,
     "boiling-point": "-"
   },
@@ -2024,7 +2024,7 @@
       { "s": 2, "p": 0, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 259,
     "melting-point": 1100,
     "boiling-point": "-"
   },
@@ -2044,7 +2044,7 @@
       { "s": 2, "p": 1, "d": 0, "f": 0 }
     ],
     "electronegativity": 1.3,
-    "atomic-weight": "-",
+    "atomic-weight": 266,
     "melting-point": 1900,
     "boiling-point": "-"
   }
