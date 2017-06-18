@@ -25,6 +25,12 @@
     "paper-dialog": "PolymerElements/paper-dialog#^2.0.0",
     "iron-pages": "PolymerElements/iron-pages#^2.0.0",
     "iron-icons": "PolymerElements/iron-icons#^2.0.1",
-    "iron-icon": "PolymerElements/iron-icon#^2.0.0"
+    "iron-icon": "PolymerElements/iron-icon#^2.0.0",
+    "app-layout": "PolymerElements/app-layout#^2.0.0",
+    "paper-item": "PolymerElements/paper-item#^2.0.0",
+    "paper-swatch-picker": "PolymerElements/paper-swatch-picker#^2.0.0",
+    "paper-listbox": "PolymerElements/paper-listbox#^2.0.0",
+    "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^2.0.0",
+    "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0"
   }
 }

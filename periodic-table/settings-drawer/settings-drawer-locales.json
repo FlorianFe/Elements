@@ -1,0 +1,36 @@
+{
+  "en":
+  {
+    "settings": "settings",
+    "language": "language",
+    "temperature" : "temperature",
+
+    "alkali metal": "alkali metal",
+    "alkaline earth metal": "alkaline earth metal",
+    "transition metal": "transition metal",
+    "post transition metal": "post transition metal",
+    "metalloid": "metalloid",
+    "other nonmetal": "other nonmetal",
+    "halogen": "halogen",
+    "noble gas": "noble gas",
+    "lanthanide": "lanthanide",
+    "actinide": "actinide"
+  },
+  "de":
+  {
+    "settings": "Einstellungen",
+    "language": "Sprache",
+    "temperature" : "Temperatur",
+
+    "alkali metal": "Alkalimetall",
+    "alkaline earth metal": "Erdalkalimetall",
+    "transition metal": "Übergangsmetall",
+    "post transition metal": "Post-Übergangsmetall",
+    "metalloid": "Metalloid",
+    "other nonmetal": "Andere Nicht-Metalle",
+    "halogen": "Halogen",
+    "noble gas": "Edelgas",
+    "lanthanide": "Lanthanide",
+    "actinide": "Actinide"
+  }
+}

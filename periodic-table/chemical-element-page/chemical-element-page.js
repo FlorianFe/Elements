@@ -1,5 +1,5 @@
 
-class ChemicalElementPage extends Polymer.Element
+class ChemicalElementPage extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior], Polymer.Element)
 {
   static get is()
   {
@@ -10,7 +10,9 @@ class ChemicalElementPage extends Polymer.Element
   {
     return {
       symbol: String,
-      element: Object
+      element: Object,
+      language: String,
+      temperatureIndicator: String
     }
   }
 
@@ -31,16 +33,39 @@ class ChemicalElementPage extends Polymer.Element
   connectedCallback()
   {
     super.connectedCallback();
+
+    this.loadResources(this.resolveUrl('chemical-element-page-locales.json'));
   }
 
-  displayKelvin(kelvin)
+  displayTemperaturIndication(kelvin, temperatureIndicator)
   {
+    let value = "-";
+
     if(typeof kelvin == "number")
     {
-      return kelvin + " K";
+      if(temperatureIndicator === "k")
+      {
+        value = kelvin;
+        if((""+value).length >= 6) value = (""+value).substring(0, 6);
+        value += " K";
+      }
+
+      if(temperatureIndicator === "f")
+      {
+        value = ((kelvin - 273) * 1.8 + 32);
+        if((""+value).length >= 6) value = (""+value).substring(0, 6);
+        value += " °F";
+      }
+
+      if(temperatureIndicator === "c")
+      {
+        value = (kelvin - 273);
+        if((""+value).length >= 6) value = (""+value).substring(0, 6);
+        value += " °C";
+      }
     }
 
-    return "-";
+    return value;
   }
 
   displayAtomicWeightIndex(atomicWeigth)

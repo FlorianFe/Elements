@@ -6,6 +6,7 @@
 <link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
 <link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../../bower_components/iron-icons/image-icons.html">
+<link rel="import" href="../../bower_components/app-localize-behavior/app-localize-behavior.html">
 
 <link rel="import" href="chemical-element-visualisation/chemical-element-visualisation.html">
 
@@ -80,24 +81,24 @@
           </div>
           <div class="item-3x">
             <div id="details-area">
-              <b class$="[[element.group]]">[[element.name]]</b>
+              <b class$="[[element.group]]">[[localize(element.name)]]</b>
               <br><br>
               <table>
                 <tr>
-                  <td>atomic number:</td>
+                  <td>[[localize("atomic number")]]:</td>
                   <td>[[element.atomic-number]]</td>
                 </tr>
                 <tr>
-                  <td>[[displayAtomicWeightIndex(element.atomic-weight)]]:</td>
-                  <td>[[element.atomic-weight]]</td>
-                  <td>melting point:</td>
-                  <td>[[displayKelvin(element.melting-point)]]</td>
+                  <td>[[localize("atomic weight")]]:</td>
+                  <td>[[element.atomic-weight]] u</td>
+                  <td>[[localize("melting point")]]:</td>
+                  <td>[[displayTemperaturIndication(element.melting-point, temperatureIndicator)]]</td>
                 </tr>
                 <tr>
-                  <td>electronegativity:</td>
+                  <td>[[localize("electronegativity")]]:</td>
                   <td>[[element.electronegativity]]</td>
-                  <td>boiling point:</td>
-                  <td>[[displayKelvin(element.boiling-point)]]</td>
+                  <td>[[localize("boiling point")]]:</td>
+                  <td>[[displayTemperaturIndication(element.boiling-point, temperatureIndicator)]]</td>
                 </tr>
               </table>
             </div>

@@ -6,7 +6,9 @@ class PeriodicTable extends Polymer.Element
   static get properties()
   {
     return {
-      selectedElementSymbol: String
+      selectedElementSymbol: String,
+      language: String,
+      temperatureIndicator: String
     }
   }
 
@@ -37,6 +39,19 @@ class PeriodicTable extends Polymer.Element
         this.selectedElementSymbol = "0";
       });
     })
+
+    this.$["settings-icon"].addEventListener("click", () =>
+    {
+      this.$["settings-drawer"].open();
+    });
+
+    this.$["settings-drawer"].addEventListener("css-variable-changed", (data) =>
+    {
+      let key = data.detail.key;
+      let value = data.detail.value;
+
+      this.style.setProperty(key, value);
+    });
   }
 }
 

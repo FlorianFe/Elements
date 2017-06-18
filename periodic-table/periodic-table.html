@@ -4,15 +4,15 @@
 <!-- Imports Dependencies -->
 <link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
 
 <link rel="import" href="chemical-element/chemical-element.html">
 <link rel="import" href="chemical-element-page/chemical-element-page.html">
+<link rel="import" href="settings-drawer/settings-drawer.html">
 
 <!-- Defines element markup -->
 <dom-module id="periodic-table">
-
-  <!-- Loads styles -->
-  <link rel="import" type="css" href="periodic-table.css">
 
   <template>
 
@@ -44,10 +44,84 @@
           --actinide-background-color: #f48fb1;
         }
 
+        .container
+        {
+          display: flex;
+        }
+
+        .item
+        {
+          flex: 1;
+          margin: 3px;
+        }
+
+        .align-right
+        {
+          text-align: right;
+        }
+
+        .left-box
+        {
+          flex: 3;
+        }
+
+        .middle-box
+        {
+          flex: 8;
+        }
+
+        .right-box
+        {
+          flex: 7;
+        }
+
+        .index
+        {
+          font-size: 1vw;
+          text-align: center;
+          padding-top: calc(100% - 1em);
+          color: #cfd8dc;
+          border-bottom: 1px ridge #cfd8dc;
+        }
+
+        paper-card
+        {
+          width: 100%;
+          height: 100%;
+          padding: calc(50% - 1em);
+          padding-top: calc(50% - (1em/2));
+          padding-bottom: calc(50% - (1em/2));
+          font-family: sans-serif;
+          font-size: 3vw;
+          color: white;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .lan­thanide
+        {
+          background-color: var(--lanthanide-background-color);
+        }
+
+        .actinide
+        {
+          background-color: var(--actinide-background-color);
+        }
+
       </style>
     </custom-style>
 
+    <settings-drawer
+      id="settings-drawer"
+      language="{{language}}"
+      temperature-indicator="{{temperatureIndicator}}"
+    ></settings-drawer>
+
     <div>
+      <div class="align-right">
+        <iron-icon id="settings-icon" icon="icons:settings"></iron-icon>
+      </div>
+
       <div class="container">
         <div class="item"><div class="index">A I</div></div>
         <div class="item"></div>
@@ -68,18 +142,20 @@
         <div class="item"></div>
         <div class="item"></div>
         <div class="item"></div>
-        <div class="item"><div class="index">A VIII</div></div>
+        <div class="item">
+          <div class="index">A VIII</div>
+        </div>
       </div>
       <div class="container">
         <div class="left-box">
           <div class="container">
-            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="h"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="h"></chemical-element></div>
             <div class="item"><div class="index">A II</div></div>
             <div class="item"></div>
           </div>
           <div class="container">
-            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="li"></chemical-element></div>
-            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="be"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="li"></chemical-element></div>
+            <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="be"></chemical-element></div>
             <div class="item"></div>
           </div>
         </div>
@@ -89,119 +165,119 @@
             attr-for-Selected="symbol"
             fallback-selection="0"
           >
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="h"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" visualisation-size="[[visualisationSize]]"symbol="he"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="h"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="he"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" visualisation-size="[[visualisationSize]]"symbol="li"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="be"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="b"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="c"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="n"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="o"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="f"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="ne"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="li"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="be"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="b"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="c"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="n"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="o"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="f"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ne"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="na"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="mg"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="al"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="si"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="p"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="s"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="cl"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]"symbol="ar"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="na"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="mg"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="al"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="si"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="p"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="s"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cl"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ar"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="k"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ca"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sc"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ti"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="v"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cr"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="mn"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="fe"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="co"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ni"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cu"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="zn"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ga"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ge"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="as"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="se"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="br"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="kr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="k"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ca"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="sc"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ti"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="v"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="mn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="fe"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="co"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ni"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="zn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ga"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ge"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="as"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="se"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="br"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="kr"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="rb"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sr"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="y"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="zr"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="nb"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="mo"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tc"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ru"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="rh"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pd"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ag"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cd"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="in"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sn"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sb"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="te"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="i"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="xe"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="rb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="sr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="y"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="zr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="nb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="mo"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="tc"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ru"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="rh"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ag"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="in"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="sn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="sb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="te"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="i"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="xe"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cs"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ba"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cs"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ba"></chemical-element-page>
             <!-- F Group -->
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="hf"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ta"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="w"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="re"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="os"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ir"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pt"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="au"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="hg"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tl"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pb"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="bi"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="po"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="at"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="rn"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="hf"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ta"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="w"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="re"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="os"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ir"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pt"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="au"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="hg"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="tl"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="bi"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="po"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="at"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="rn"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="fr"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ra"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="fr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ra"></chemical-element-page>
             <!-- F Group -->
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="la"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ce"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pr"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="nd"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pm"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="sm"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="eu"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="gd"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tb"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="dy"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ho"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="er"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="tm"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="yb"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="lu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="la"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ce"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="nd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="sm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="eu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="gd"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="tb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="dy"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ho"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="er"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="tm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="yb"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="lu"></chemical-element-page>
 
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="ac"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="th"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pa"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="u"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="np"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="pu"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="am"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cm"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="bk"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="cf"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="es"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="fm"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="md"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="no"></chemical-element-page>
-            <chemical-element-page visualisation-size="[[visualisationSize]]" symbol="lr"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="ac"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="th"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pa"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="u"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="np"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="pu"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="am"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="bk"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="cf"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="es"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="fm"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="md"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="no"></chemical-element-page>
+            <chemical-element-page visualisation-size="[[visualisationSize]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="lr"></chemical-element-page>
           </iron-pages>
         </div>
         <div class="right-box">
