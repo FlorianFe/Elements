@@ -2,7 +2,7 @@
 ![Icon](https://florianfe.github.io/screenshots/elements/icon.png)<br>
 
 ## Description
-⚛⚗ A desktop App which shows a periodic table
+⚛⚗ A desktop App which displays the periodic table
 
 ## Preview
 
