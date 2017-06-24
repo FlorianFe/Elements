@@ -4,7 +4,7 @@
   "description": "A periodic table viewer desktop app",
   "main": "main.js",
   "scripts": {
-    "start": "ELECTRON_ENABLE_LOGGING=1 electron .",
+    "start": "electron .",
     "pack": "build --dir",
     "dist": "build"
   },
