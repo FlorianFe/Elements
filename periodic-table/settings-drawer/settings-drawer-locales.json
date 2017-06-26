@@ -1,9 +1,9 @@
 {
   "en":
   {
-    "settings": "settings",
-    "language": "language",
-    "temperature" : "temperature",
+    "settings": "Settings",
+    "language": "Language",
+    "temperature" : "Temperature",
 
     "alkali metal": "alkali metal",
     "alkaline earth metal": "alkaline earth metal",

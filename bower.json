@@ -31,6 +31,7 @@
     "paper-swatch-picker": "PolymerElements/paper-swatch-picker#^2.0.0",
     "paper-listbox": "PolymerElements/paper-listbox#^2.0.0",
     "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^2.0.0",
-    "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0"
+    "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0",
+    "chemical-element-visualisation": "FlorianFe/chemical-element-visualisation#^1.0.0"
   }
 }

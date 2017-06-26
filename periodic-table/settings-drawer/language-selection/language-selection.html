@@ -1,0 +1,56 @@
+<!-- Imports Polymer -->
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<!-- Imports Dependencies -->
+<link rel="import" href="../../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../../bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="../../../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+
+<!-- Defines element markup -->
+<dom-module id="language-selection">
+
+  <template>
+
+    <custom-style>
+      <style>
+
+        paper-dropdown-menu
+        {
+          width: 100%;
+          color: inherit;
+        }
+
+        paper-dropdown-menu
+        {
+          color: inherit;
+        }
+
+        paper-icon-item
+        {
+          color: inherit;
+        }
+
+      </style>
+    </custom-style>
+
+    <paper-dropdown-menu label='[[localize("language")]]'>
+      <paper-listbox slot="dropdown-content" attr-for-selected="iso" selected="{{selected}}">
+
+        <dom-repeat items="[[availableLanguageIso]]" as="iso">
+          <template>
+            <paper-icon-item iso="[[iso]]">
+              <img slot="item-icon" width="40" src$='[[_getFlagPathOfLanguageIso(iso)]]'>
+              [[_convertLanguageIsoToLanguageName(iso)]]
+            </paper-icon-item>
+          </template>
+        </dom-repeat>
+
+      </paper-listbox>
+    </paper-dropdown-menu>
+
+  </template>
+
+  <!-- Loads JavaScript -->
+  <script src="language-selection.js"></script>
+</dom-module>
