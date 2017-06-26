@@ -32,5 +32,39 @@
     "noble gas": "Edelgas",
     "lanthanide": "Lanthanide",
     "actinide": "Actinide"
+  },
+  "fr":
+  {
+    "settings": "Paramètres",
+    "language": "Langue",
+    "temperature" : "Température",
+
+    "alkali metal": "Métal alcalin",
+    "alkaline earth metal": "métal alcalino-terreux",
+    "transition metal": "métal de transition",
+    "post transition metal": "métal post-transition",
+    "metalloid": "métalloïde",
+    "other nonmetal": "autre non métallique,",
+    "halogen": "halogène",
+    "noble gas": "gaz noble",
+    "lanthanide": "lanthanide",
+    "actinide": "actinide"
+  },
+  "pt-br":
+  {
+    "settings": "Configurações",
+    "language": "idioma",
+    "temperature" : "temperatura",
+
+    "alkali metal": "Metal alcalino",
+    "alkaline earth metal": "metal alcalino-terroso",
+    "transition metal": "metal de transição",
+    "post transition metal": "pós-metal de transição",
+    "metalloid": "metalóides",
+    "other nonmetal": "outros não metálicos",
+    "halogen": "halogéneos",
+    "noble gas": "gases nobres",
+    "lanthanide": "lantanídeos",
+    "actinide": "actinídeos"
   }
 }
