@@ -45,18 +45,23 @@
 
         table
         {
-          font-size: 1vw;
+          font-size: 0.9vw;
           width: 100%;
         }
 
         b
         {
-          font-size: 1vw;
+          font-size: 0.9vw;
         }
 
         td
         {
-          width: 25%;
+          width: 33%;
+        }
+
+        td.indexer
+        {
+          width: 67%;
         }
 
         .not-metal              { color: var(--non-metal-primary-color);              }
@@ -81,26 +86,57 @@
           </div>
           <div class="item-3x">
             <div id="details-area">
-              <b class$="[[element.group]]">[[localize(element.name)]]</b>
-              <br><br>
-              <table>
-                <tr>
-                  <td>[[localize("atomic number")]]:</td>
-                  <td>[[element.atomic-number]]</td>
-                </tr>
-                <tr>
-                  <td>[[localize("atomic weight")]]:</td>
-                  <td>[[element.atomic-weight]] u</td>
-                  <td>[[localize("melting point")]]:</td>
-                  <td>[[displayTemperaturIndication(element.melting-point, temperatureIndicator)]]</td>
-                </tr>
-                <tr>
-                  <td>[[localize("electronegativity")]]:</td>
-                  <td>[[element.electronegativity]]</td>
-                  <td>[[localize("boiling point")]]:</td>
-                  <td>[[displayTemperaturIndication(element.boiling-point, temperatureIndicator)]]</td>
-                </tr>
-              </table>
+
+              <div class="container">
+                <div class="item">
+                  <table>
+                    <tr>
+                      <td class="indexer"><big><big><b class$="[[element.group]]">[[localize(element.name)]]</b></big></big></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"><b>[[localize("atomic number")]]</b></td>
+                      <td>[[element.atomic-number]]</td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"><b>[[localize("atomic weight")]]</b></td>
+                      <td>[[element.atomic-weight]]&nbsp;u</td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"><b>[[localize("electronegativity")]]</b></td>
+                      <td>[[element.electronegativity]]</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="item">
+                  <table>
+                    <tr>
+                      <td class="indexer"></td>
+                      <td><big><big>&nbsp;</big></big></td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"></td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"><b>[[localize("boiling point")]]</b></td>
+                      <td>[[displayTemperaturIndication(element.boiling-point, temperatureIndicator)]]</td>
+                    </tr>
+                    <tr>
+                      <td class="indexer"><b>[[localize("melting point")]]</b></td>
+                      <td>[[displayTemperaturIndication(element.melting-point, temperatureIndicator)]]</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
