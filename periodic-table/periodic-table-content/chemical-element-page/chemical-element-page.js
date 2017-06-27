@@ -16,6 +16,11 @@ class ChemicalElementPage extends Polymer.mixinBehaviors([Polymer.AppLocalizeBeh
     }
   }
 
+  static get observers()
+  {
+    return ['_onSymbolChange(symbol)'];
+  }
+
   constructor()
   {
     super();
@@ -46,21 +51,21 @@ class ChemicalElementPage extends Polymer.mixinBehaviors([Polymer.AppLocalizeBeh
       if(temperatureIndicator === "k")
       {
         value = kelvin;
-        if((""+value).length >= 6) value = (""+value).substring(0, 6);
+        if((""+value).length >= 6) value = ("" + value).substring(0, 6);
         value += " K";
       }
 
       if(temperatureIndicator === "f")
       {
         value = ((kelvin - 273) * 1.8 + 32);
-        if((""+value).length >= 6) value = (""+value).substring(0, 6);
+        if((""+value).length >= 6) value = ("" + value).substring(0, 6);
         value += " °F";
       }
 
       if(temperatureIndicator === "c")
       {
         value = (kelvin - 273);
-        if((""+value).length >= 6) value = (""+value).substring(0, 6);
+        if((""+value).length >= 6) value = ("" + value).substring(0, 6);
         value += " °C";
       }
     }
@@ -68,14 +73,11 @@ class ChemicalElementPage extends Polymer.mixinBehaviors([Polymer.AppLocalizeBeh
     return value;
   }
 
-  displayAtomicWeightIndex(atomicWeigth)
+  _onSymbolChange(symbol)
   {
-    if(atomicWeigth % 1 === 0)
-    {
-      return "mass number";
-    }
+    let chemicalElements = require('./periodic-table/shared/chemical-elements');
 
-    return "atomic weigth";
+    this.element = chemicalElements[this.symbol];
   }
 }
 

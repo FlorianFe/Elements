@@ -66,5 +66,73 @@
     "noble gas": "gases nobres",
     "lanthanide": "lantanídeos",
     "actinide": "actinídeos"
+  },
+  "sp":
+  {
+    "settings": "Ajustes",
+    "language": "idioma",
+    "temperature" : "temperatura",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "tk":
+  {
+    "settings": "ayarlar",
+    "language": "dil",
+    "temperature" : "sıcaklık",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "hi":
+  {
+    "settings": "सेटिंग्स",
+    "language": "भाषा",
+    "temperature" : "तापमान",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "ch":
+  {
+    "settings": "设置",
+    "language": "语言",
+    "temperature" : "温度",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
   }
 }

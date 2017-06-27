@@ -6,9 +6,11 @@ class PeriodicTable extends Polymer.Element
   static get properties()
   {
     return {
-      selectedElementSymbol: String,
-      language: String,
-      temperatureIndicator: String
+      _selectedPage:
+      {
+        type: Number,
+        value: 0
+      }
     }
   }
 
@@ -17,40 +19,76 @@ class PeriodicTable extends Polymer.Element
     super();
   }
 
+  ready()
+  {
+    super.ready();
+  }
+
   connectedCallback()
   {
     super.connectedCallback();
 
-    let chemicalElements = this.shadowRoot.querySelectorAll('chemical-element');
-    let chemicalElementPages = this.shadowRoot.querySelectorAll('chemical-element-page');
-
-    chemicalElements.forEach((chemicalElement) =>
+    this.$["loading-bar-container"].animate(
+    [
+      { "opacity" : 0.0},
+      { "opacity" : 1.0}
+    ],
     {
-      chemicalElement.addEventListener("chemical-element-selected", (data) =>
-      {
-        this.selectedElementSymbol = data.detail.symbol;
-      });
+      duration: 500
     });
 
-    chemicalElementPages.forEach((chemicalElementPage) =>
+    Promise.all(
+    [
+      this._importHref(this.resolveUrl("periodic-table-content/periodic-table-content.html")),
+      new Promise((resolve, reject) => {setTimeout(() => {resolve()}, 3000);})
+    ])
+    .then(() =>
     {
-      chemicalElementPage.addEventListener("back-link-clicked", (data) =>
+      let animation = this.$["loading-bar-container"].animate(
+      [
+        { "opacity" : 1.0},
+        { "opacity" : 0.0}
+      ],
       {
-        this.selectedElementSymbol = "0";
+        duration: 500
       });
-    })
 
-    this.$["settings-icon"].addEventListener("click", () =>
-    {
-      this.$["settings-drawer"].open();
+      animation.onfinish = () =>
+      {
+        this._selectedPage = 1;
+
+        this.$["periodic-table-content-container"].animate(
+        [
+          { "opacity" : 0.0},
+          { "opacity" : 1.0}
+        ],
+        {
+          duration: 500
+        });
+      };
     });
+  }
 
-    this.$["settings-drawer"].addEventListener("css-variable-changed", (data) =>
+  _pickRandomElementSymbol()
+  {
+    let symbols =
+    [
+      "h", "he",
+      "li", "be", "b", "c", "n", "o", "f", "ne",
+      "na", "mg", "al", "si", "p", "s", "al", "ar",
+      "fe", "au", "cu", "pt", "u", "ag", "zn", "ti"
+    ];
+
+    return symbols[Math.floor(Math.random() * symbols.length)];
+  }
+
+  _importHref(href)
+  {
+    return new Promise((resolve, reject) =>
     {
-      let key = data.detail.key;
-      let value = data.detail.value;
-
-      this.style.setProperty(key, value);
+      Polymer.Base.importHref(href, function(e) {
+        resolve(e.target);
+      }, reject, false);
     });
   }
 }

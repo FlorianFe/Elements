@@ -14,5 +14,21 @@
   "pt-br":
   {
     "language": "idioma"
+  },
+  "sp":
+  {
+    "language": "idioma"
+  },
+  "tk":
+  {
+    "language": "dil"
+  },
+  "hi":
+  {
+    "language": "भाषा"
+  },
+  "ch":
+  {
+    "language": "语言"
   }
 }
