@@ -31,6 +31,6 @@ npm run-script dist
 ![screenshot 3](https://florianfe.github.io/screenshots/elements/screenshot-3.png)
 
 ## Download
-<li><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.0/Elements.dmg">Download for Mac (version 1.1.0)</a></li>
-<li><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.0/Elements.exe">Download for Windows (version 1.1.0)</a></li>
+<li><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.1/Elements.dmg">Download for Mac (version 1.1.1)</a></li>
+<li><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.1/Elements.exe">Download for Windows (version 1.1.1)</a></li>
 
