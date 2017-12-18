@@ -135,7 +135,41 @@
     "lanthanide": "???",
     "actinide": "???"
   },
-  "en":
+  "cz":
+  {
+    "settings": "nastavení",
+    "language": "český",
+    "temperature" : "teplota",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "ru":
+  {
+    "settings": "настройки",
+    "language": "язык",
+    "temperature" : "температура",
+
+    "alkali metal": "???",
+    "alkaline earth metal": "???",
+    "transition metal": "???",
+    "post transition metal": "???",
+    "metalloid": "???",
+    "other nonmetal": "???",
+    "halogen": "???",
+    "noble gas": "???",
+    "lanthanide": "???",
+    "actinide": "???"
+  },
+  "pl":
   {
     "settings": "Ustawienia",
     "language": "Język",
@@ -151,5 +185,5 @@
     "noble gas": "gaz szlachetny",
     "lanthanide": "lantanowiec",
     "actinide": "aktynowiec"
-  },
+  }
 }

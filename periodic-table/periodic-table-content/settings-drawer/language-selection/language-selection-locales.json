@@ -35,8 +35,12 @@
   {
     "language": "český"
   },
+  "ru":
+  {
+    "language": "язык"
+  },
   "pl":
   {
     "language": "Język"
-  },
+  }
 }

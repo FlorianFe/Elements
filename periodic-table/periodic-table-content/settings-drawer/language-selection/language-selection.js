@@ -32,7 +32,8 @@ class LanguageSelection extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehav
           "pt-br",
           "hi",
           "cz",
-          "ru"
+          "ru",
+          "pl"
         ]
       },
       _languageIsoToFlagMap:
@@ -48,7 +49,8 @@ class LanguageSelection extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehav
           "pt-br": "br",
           "hi": "in",
           "cz": "cz",
-          "ru": "ru"
+          "ru": "ru",
+          "pl": "pl"
         }
       },
       _languageIsoToLanguageNameMap:
@@ -64,7 +66,8 @@ class LanguageSelection extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehav
           "pt-br": "Português",
           "hi": "हिन्दी",
           "cz": "čeština",
-          "ru": "русский"
+          "ru": "русский",
+          "pl": "Język"
         }
       }
     }
