@@ -134,5 +134,22 @@
     "noble gas": "???",
     "lanthanide": "???",
     "actinide": "???"
-  }
+  },
+  "en":
+  {
+    "settings": "Ustawienia",
+    "language": "Język",
+    "temperature" : "Temperatura",
+
+    "alkali metal": "metal alkaliczny",
+    "alkaline earth metal": "metal ziem alkalicznych",
+    "transition metal": "metal przejściowy",
+    "post transition metal": "metal bloku p",
+    "metalloid": "metaloid",
+    "other nonmetal": "inny niemetal",
+    "halogen": "halogeny",
+    "noble gas": "gaz szlachetny",
+    "lanthanide": "lantanowiec",
+    "actinide": "aktynowiec"
+  },
 }
