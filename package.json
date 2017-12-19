@@ -33,7 +33,6 @@
   "dependencies": {
     "electron-localshortcut": "^1.1.0",
     "ipc": "0.0.1",
-    "paper-button": "github:PolymerElements/paper-button",
     "path": "^0.12.7"
   }
 }

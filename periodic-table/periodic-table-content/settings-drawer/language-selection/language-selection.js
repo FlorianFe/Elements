@@ -67,7 +67,7 @@ class LanguageSelection extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehav
           "hi": "हिन्दी",
           "cz": "čeština",
           "ru": "русский",
-          "pl": "Język"
+          "pl": "polski"
         }
       }
     }
