@@ -9,7 +9,7 @@
     "dist": "build"
   },
   "build": {
-    "appId": "de.florianfe.easytongue",
+    "appId": "de.florianfe.elements",
     "mac": {
       "category": "public.app-category.utilities",
       "icon": "icon@2x"
