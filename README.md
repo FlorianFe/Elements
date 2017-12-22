@@ -1,8 +1,10 @@
-# Elements
-![Icon](https://florianfe.github.io/screenshots/elements/icon.png)<br>
+<p align="center">
+  <img alt="Icon" src="https://florianfe.github.io/screenshots/elements/icon.png">
+  <h1 align="center">Elements</h1>
+  <p align="center">⚛⚗ A desktop App which displays the periodic table</p>
+</p>
 
-## Description
-⚛⚗ A desktop App which displays the periodic table
+
 
 ## Source Code
 
@@ -32,7 +34,7 @@ npm run-script dist
 
 ## Download
 
-<table>
+<table align="center">
   <tr>
     <th>Platform</th>
     <th>Version</th>
