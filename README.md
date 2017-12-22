@@ -4,7 +4,7 @@
   <p align="center">⚛⚗ A desktop App which displays the periodic table</p>
 </p>
 
-
+<br><br>
 
 ## Source Code
 
