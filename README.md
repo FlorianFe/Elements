@@ -1,12 +1,12 @@
 <p align="center">
   <img alt="Icon" src="https://florianfe.github.io/screenshots/elements/icon.png">
   <h1 align="center">Elements</h1>
-  <p align="center">⚛⚗ A desktop App which displays the periodic table</p>
+  <p align="center">⚛⚗ <br>A desktop App which displays the periodic table</p>
 </p>
 
 <br><br>
 
-## Source Code
+## 📝 Source Code
 
 In order to use this source code you need to have Node.js, Git and Bower installed globally. After that you have to follow the steps below.
 
@@ -26,13 +26,13 @@ npm run-script dist
 ```
 
 
-## Preview
+## 🖼 Preview
 
 ![screenshot 1](https://florianfe.github.io/screenshots/elements/screenshot-1.png)
 ![screenshot 2](https://florianfe.github.io/screenshots/elements/screenshot-2.png)
 ![screenshot 3](https://florianfe.github.io/screenshots/elements/screenshot-3.png)
 
-## Download
+## 💾 Download
 
 <table align="center">
   <tr>
