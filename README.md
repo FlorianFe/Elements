@@ -1,7 +1,7 @@
 <p align="center">
   <img alt="Icon" src="https://florianfe.github.io/screenshots/elements/icon.png">
   <h1 align="center">Elements</h1>
-  <p align="center">⚛⚗ <br>A desktop App which displays the periodic table</p>
+  <p align="center">A desktop App which displays the periodic table</p>
 </p>
 
 <br><br>
