@@ -1,7 +1,11 @@
 <p align="center">
   <img alt="Icon" src="https://florianfe.github.io/screenshots/elements/icon.png">
   <h1 align="center">Elements</h1>
-  <p align="center">A desktop App which displays the periodic table</p>
+  <p align="center">A desktop App which displays the periodic table<br><br>
+    <a href="http://forthebadge.com"><img alt="forthebadge" src="http://forthebadge.com/images/badges/built-with-love.svg"></a>
+  <a href="http://forthebadge.com"><img alt="forthebadge" src="http://forthebadge.com/images/badges/uses-js.svg"></a>
+  </p>
+  
 </p>
 
 <br><br>
@@ -51,3 +55,6 @@ npm run-script dist
     <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.3/Elements.exe">Download</a></td>
   </tr>
 </table>
+
+## 📖 License
+[![forthebadge](http://forthebadge.com/images/badges/cc-0.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
