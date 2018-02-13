@@ -46,13 +46,13 @@ npm run-script dist
   </tr>
   <tr>
     <td>Mac</td>
-    <td>1.1.3</td>
-    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.3/Elements.dmg">Download</a></td>
+    <td>1.1.4</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.4/Elements.dmg">Download</a></td>
   </tr>
   <tr>
     <td>Windows</td>
-    <td>1.1.3</td>
-    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.3/Elements.exe">Download</a></td>
+    <td>1.1.4</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.4/Elements.exe">Download</a></td>
   </tr>
 </table>
 
