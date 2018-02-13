@@ -22,7 +22,6 @@
   "dependencies": {
     "polymer": "^2.0.1",
     "paper-card": "PolymerElements/paper-card#^2.0.0",
-    "paper-dialog": "PolymerElements/paper-dialog#^2.0.0",
     "iron-pages": "PolymerElements/iron-pages#^2.0.0",
     "iron-icons": "PolymerElements/iron-icons#^2.0.1",
     "iron-icon": "PolymerElements/iron-icon#^2.0.0",
@@ -33,6 +32,7 @@
     "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^2.0.0",
     "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0",
     "chemical-element-visualisation": "FlorianFe/chemical-element-visualisation#^1.0.0",
-    "app-storage": "^2.0.2"
+    "app-storage": "^2.0.2",
+    "paper-dialog": "PolymerElements/paper-dialog#^2.0.1"
   }
 }

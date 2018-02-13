@@ -1,0 +1,122 @@
+<!-- Imports Polymer -->
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<!-- Imports Dependencies -->
+
+<link rel="import" href="../../../bower_components/app-localize-behavior/app-localize-behavior.html">
+<link rel="import" href="../../../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../../../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../../../bower_components/paper-item/paper-icon-item.html">
+<link rel="import" href="../../../bower_components/paper-listbox/paper-listbox.html">
+<link rel="import" href="../../../bower_components/paper-dropdown-menu/paper-dropdown-menu.html">
+<link rel="import" href="../../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../../../bower_components/neon-animation/web-animations.html">
+<link rel="import" href="../../../bower_components/app-storage/app-localstorage/app-localstorage-document.html">
+<link rel="import" href="../../../bower_components/paper-dialog/paper-dialog.html">
+
+<link rel="import" href="language-selection/language-selection.html">
+
+
+<!-- Defines element markup -->
+<dom-module id="settings-dialog">
+
+  <!-- Loads styles -->
+
+  <template>
+
+
+    <custom-style>
+      <style is="custom-style">
+
+        :host
+        {
+          display: block;
+        }
+
+        language-selection
+        {
+          color: #888;
+          text-align: left;
+
+          --paper-item-focused:
+          {
+            background: #fff;
+          };
+          --paper-item-focused-before:
+          {
+            opacity: 0;
+          };
+
+          cursor: pointer;
+          width: 100%;
+        }
+
+        a
+        {
+          color: #aaa;
+          text-decoration: none;
+        }
+
+        paper-listbox
+        {
+          cursor: pointer;
+          width: 100%;
+        }
+
+        paper-dropdown-menu
+        {
+          width: 100%;
+        }
+
+        div.container
+        {
+          display: flex;
+        }
+
+        div.item-2x
+        {
+          flex: 2;
+        }
+
+        div.item-1x
+        {
+          flex: 1;
+        }
+
+        paper-dialog
+        {
+          width: 30%;
+        }
+
+      </style>
+    </custom-style>
+
+    <app-localstorage-document key="temperatureIndicator" data="{{temperatureIndicator}}"></app-localstorage-document>
+    <app-localstorage-document key="language" data="{{language}}"></app-localstorage-document>
+
+    <paper-dialog id="paper-dialog" with-backdrop>
+      <h2>
+        <iron-icon icon="settings" slot="item-icon"></iron-icon>
+        [[localize("settings")]]
+      </h2>
+
+      <div id="dialog-container">
+        <language-selection selected="{{language}}" language="[[language]]"></language-selection>
+
+        <paper-dropdown-menu label='[[localize("temperature")]]'>
+          <paper-listbox slot="dropdown-content" attr-for-selected="value" selected="{{temperatureIndicator}}">
+            <paper-item value="k">Kelvin(K)</paper-item>
+            <paper-item value="f">Fahrenheit(°F)</paper-item>
+            <paper-item value="c">Celsius(°C)</paper-item>
+          </paper-listbox>
+        </paper-dropdown-menu>
+      </div>
+      
+    </paper-dialog>
+
+  </template>
+
+  <!-- Loads JavaScript -->
+  <script src="settings-dialog.js"></script>
+</dom-module>

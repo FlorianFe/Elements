@@ -10,7 +10,7 @@
 
 <link rel="import" href="chemical-element/chemical-element.html">
 <link rel="import" href="chemical-element-page/chemical-element-page.html">
-<link rel="import" href="settings-drawer/settings-drawer.html">
+<link rel="import" href="settings-dialog/settings-dialog.html">
 
 <!-- Defines element markup -->
 <dom-module id="periodic-table-content">
@@ -113,11 +113,11 @@
 
     <app-localstorage-document key="selectedElementSymbol" data="{{selectedElementSymbol}}"></app-localstorage-document>
 
-    <settings-drawer
-      id="settings-drawer"
+    <settings-dialog
+      id="settings-dialog"
       language="{{language}}"
       temperature-indicator="{{temperatureIndicator}}"
-    ></settings-drawer>
+    ></settings-dialog>
 
     <div class="align-right">
       <iron-icon id="settings-icon" icon="icons:settings"></iron-icon>

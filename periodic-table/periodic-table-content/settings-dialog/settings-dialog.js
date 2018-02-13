@@ -1,9 +1,9 @@
 
-class SettingsDrawer extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior], Polymer.Element)
+class SettingsDialog extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior], Polymer.Element)
 {
   static get is()
   {
-    return 'settings-drawer';
+    return 'settings-dialog';
   }
 
   static get properties()
@@ -107,7 +107,7 @@ class SettingsDrawer extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior
   {
     super.connectedCallback();
 
-    this.loadResources(this.resolveUrl('settings-drawer-locales.json'));
+    this.loadResources(this.resolveUrl('settings-dialog-locales.json'));
 
     let electronTypes = [
       "s-group-electron",
@@ -130,35 +130,6 @@ class SettingsDrawer extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior
       "actinide"
     ];
 
-    /*
-    groupNames.forEach((groupName) =>
-    {
-      this.$[groupName + "-color-picker"].addEventListener("color-changed", (data) =>
-      {
-        let primaryColor = data.detail.value;
-        let backgroundColor = this.primaryToBackgroundColorMap[primaryColor];
-
-        this.dispatchEvent(new CustomEvent("css-variable-changed",
-        {
-          detail:
-          {
-            key: "--" + groupName + "-background-color",
-            value: backgroundColor
-          }
-        }));
-
-        this.dispatchEvent(new CustomEvent("css-variable-changed",
-        {
-          detail:
-          {
-            key: "--" + groupName + "-primary-color",
-            value: primaryColor
-          }
-        }));
-      });
-    });
-    */
-
     const shell = require('electron').shell;
     let openInBrowserLinks = this.shadowRoot.querySelectorAll(".open-in-browser-link");
     openInBrowserLinks.forEach((openInBrowserLink) =>
@@ -173,8 +144,8 @@ class SettingsDrawer extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior
 
   open()
   {
-    this.$["app-drawer"].open();
+    this.$["paper-dialog"].open();
   }
 }
 
-customElements.define(SettingsDrawer.is, SettingsDrawer);
+customElements.define(SettingsDialog.is, SettingsDialog);

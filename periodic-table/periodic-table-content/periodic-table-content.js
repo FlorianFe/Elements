@@ -44,10 +44,10 @@ class PeriodicTableContent extends Polymer.Element
 
     this.shadowRoot.querySelector("#settings-icon").addEventListener("click", () =>
     {
-      this.$["settings-drawer"].open();
+      this.$["settings-dialog"].open();
     });
 
-    this.shadowRoot.querySelector("#settings-drawer").addEventListener("css-variable-changed", (data) =>
+    this.shadowRoot.querySelector("#settings-dialog").addEventListener("css-variable-changed", (data) =>
     {
       let key = data.detail.key;
       let value = data.detail.value;
