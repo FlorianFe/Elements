@@ -1,6 +1,6 @@
 {
   "name": "Elements",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A periodic table viewer desktop app",
   "main": "main.js",
   "scripts": {
@@ -28,10 +28,10 @@
   "license": "CC-0",
   "devDependencies": {
     "electron": "^1.4.1",
-    "electron-builder": "^19.4.2"
+    "electron-builder": "^20.8.1"
   },
   "dependencies": {
-    "electron-localshortcut": "^1.1.0",
+    "electron-localshortcut": "^3.1.0",
     "ipc": "0.0.1",
     "path": "^0.12.7"
   }
