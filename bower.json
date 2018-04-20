@@ -33,6 +33,7 @@
     "app-localize-behavior": "PolymerElements/app-localize-behavior#^2.0.0",
     "chemical-element-visualisation": "FlorianFe/chemical-element-visualisation#^1.0.0",
     "app-storage": "^2.0.2",
-    "paper-dialog": "PolymerElements/paper-dialog#^2.0.1"
+    "paper-dialog": "PolymerElements/paper-dialog#^2.0.1",
+    "web-animations-js": "^2.3.1"
   }
 }
