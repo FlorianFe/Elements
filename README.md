@@ -5,7 +5,6 @@
     <a href="http://forthebadge.com"><img alt="forthebadge" src="http://forthebadge.com/images/badges/built-with-love.svg"></a>
   <a href="http://forthebadge.com"><img alt="forthebadge" src="http://forthebadge.com/images/badges/uses-js.svg"></a>
   </p>
-  
 </p>
 
 <br><br>
@@ -53,6 +52,11 @@ npm run-script dist
     <td>Windows</td>
     <td>1.1.5</td>
     <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.5/Elements.exe">Download</a></td>
+  </tr>
+  <tr>
+    <td>Linux (.deb)</td>
+    <td>1.1.5</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.5/Elements_amd64.deb">Download</a></td>
   </tr>
 </table>
 
