@@ -44,35 +44,38 @@
           --actinide-background-color: #f48fb1;
         }
 
-        .container
+        .outer-top-container
         {
-          display: flex;
+          display: grid;
+          grid-template-columns: 3fr 8fr 7fr;
+        }
+
+        .outer-bottom-container
+        {
+          display: grid;
+          grid-template-columns: repeat(18, 1fr);
+        }
+
+        .inner-container-top-left
+        {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .inner-container-top-right
+        {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
         }
 
         .item
         {
-          flex: 1;
-          margin: 3px;
+          margin: 5%;
         }
 
         .align-right
         {
           text-align: right;
-        }
-
-        .left-box
-        {
-          flex: 3;
-        }
-
-        .middle-box
-        {
-          flex: 8;
-        }
-
-        .right-box
-        {
-          flex: 7;
         }
 
         .index
@@ -123,68 +126,59 @@
       <iron-icon id="settings-icon" icon="icons:settings"></iron-icon>
     </div>
 
-    <div class="container">
-      <div class="item"><div class="index">A I</div></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item">
-        <div class="index">A VIII</div>
+    <div class="outer-top-container">
+      <div class="inner-container-top-left">
+        <div class="item"><div class="index">A I</div></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+
+      <div></div>
+
+      <div class="inner-container-top-right">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"><div class="index">A VIII</div></div>
       </div>
     </div>
-    <div class="container">
-      <div class="left-box">
-        <div class="container">
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="h"></chemical-element></div>
-          <div class="item"><div class="index">A II</div></div>
-          <div class="item"></div>
-        </div>
-        <div class="container">
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="li"></chemical-element></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="be"></chemical-element></div>
-          <div class="item"></div>
-        </div>
+
+    <div class="outer-top-container">
+      <div class="inner-container-top-left">
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="h"></chemical-element></div>
+        <div class="item"><div class="index">A II</div></div>
+        <div class="item"></div>
+
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="li"></chemical-element></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="be"></chemical-element></div>
+        <div class="item"></div>
       </div>
-      <div class="middle-box">
-        <chemical-element-page temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="[[selectedElementSymbol]]"></chemical-element-page>
-      </div>
-      <div class="right-box">
-        <div class="container">
-          <div class="item"></div>
-          <div class="item"><div class="index">A III</div></div>
-          <div class="item"><div class="index">A IV</div></div>
-          <div class="item"><div class="index">A V</div></div>
-          <div class="item"><div class="index">A VI</div></div>
-          <div class="item"><div class="index">A VII</div></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="he"></chemical-element></div>
-        </div>
-        <div class="container">
-          <div class="item"></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="b"></chemical-element></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="c"></chemical-element></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="n"></chemical-element></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="o"></chemical-element></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="f"></chemical-element></div>
-          <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ne"></chemical-element></div>
-        </div>
+
+      <chemical-element-page temperature-indicator="[[temperatureIndicator]]" language="[[language]]" symbol="[[selectedElementSymbol]]"></chemical-element-page>
+
+      <div class="inner-container-top-right">
+        <div class="item"></div>
+        <div class="item"><div class="index">A III</div></div>
+        <div class="item"><div class="index">A IV</div></div>
+        <div class="item"><div class="index">A V</div></div>
+        <div class="item"><div class="index">A VI</div></div>
+        <div class="item"><div class="index">A VII</div></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="he"></div>
+
+        <div class="item"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="b"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="c"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="n"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="o"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="f"></div>
+        <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ne"></div>
       </div>
     </div>
-    <div class="container">
+
+    <div class="outer-bottom-container">
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="na"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="mg"></chemical-element></div>
       <div class="item"><div class="index">B III</div></div>
@@ -203,8 +197,7 @@
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="s"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cl"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ar"></chemical-element></div>
-    </div>
-    <div class="container">
+      
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="k"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ca"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sc"></chemical-element></div>
@@ -223,8 +216,7 @@
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="se"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="br"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="kr"></chemical-element></div>
-    </div>
-    <div class="container">
+      
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="rb"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="sr"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="y"></chemical-element></div>
@@ -243,8 +235,7 @@
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="te"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="i"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="xe"></chemical-element></div>
-    </div>
-    <div class="container">
+    
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="cs"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ba"></chemical-element></div>
       <div class="item"><paper-card class="lan­thanide">*</paper-card></div>
@@ -263,8 +254,7 @@
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="po"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="at"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="rn"></chemical-element></div>
-    </div>
-    <div class="container">
+  
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="fr"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="ra"></chemical-element></div>
       <div class="item"><paper-card class="actinide">**</paper-card></div>
@@ -283,29 +273,7 @@
       <div class="item"></div>
       <div class="item"></div>
       <div class="item"></div>
-
-    <!--
-
-      <div class="item"><chemical-element symbol="rf"></chemical-element></div>
-      <div class="item"><chemical-element symbol="db"></chemical-element></div>
-      <div class="item"><chemical-element symbol="sg"></chemical-element></div>
-      <div class="item"><chemical-element symbol="bh"></chemical-element></div>
-      <div class="item"><chemical-element symbol="hs"></chemical-element></div>
-      <div class="item"><chemical-element symbol="mt"></chemical-element></div>
-      <div class="item"><chemical-element symbol="ds"></chemical-element></div>
-      <div class="item"><chemical-element symbol="rg"></chemical-element></div>
-      <div class="item"><chemical-element symbol="cn"></chemical-element></div>
-      <div class="item"><chemical-element symbol="nh"></chemical-element></div>
-      <div class="item"><chemical-element symbol="fl"></chemical-element></div>
-      <div class="item"><chemical-element symbol="mc"></chemical-element></div>
-      <div class="item"><chemical-element symbol="lv"></chemical-element></div>
-      <div class="item"><chemical-element symbol="ts"></chemical-element></div>
-      <div class="item"><chemical-element symbol="og"></chemical-element></div>
-
-    -->
-
-    </div>
-    <div class="container">
+      
       <div class="item"></div>
       <div class="item"></div>
       <div class="item"></div>
@@ -324,9 +292,7 @@
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="tm"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="yb"></chemical-element></div>
       <div class="item"><chemical-element selected-symbol="[[selectedElementSymbol]]" symbol="lu"></chemical-element></div>
-    </div>
 
-    <div class="container">
       <div class="item"></div>
       <div class="item"></div>
       <div class="item"></div>

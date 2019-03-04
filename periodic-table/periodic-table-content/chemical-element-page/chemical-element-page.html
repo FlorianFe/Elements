@@ -30,6 +30,11 @@
           width: 100%;
         }
 
+        .value-field
+        {
+          user-select: text; 
+        }
+
         .item
         {
           flex: 1;
@@ -100,15 +105,15 @@
                     </tr>
                     <tr>
                       <td class="indexer"><b>[[localize("atomic number")]]</b></td>
-                      <td>[[element.atomic-number]]</td>
+                      <td><span class="value-field">[[element.atomic-number]]</span></td>
                     </tr>
                     <tr>
                       <td class="indexer"><b>[[localize("atomic weight")]]</b></td>
-                      <td>[[element.atomic-weight]]&nbsp;u</td>
+                      <td><span class="value-field">[[element.atomic-weight]]</span>&nbsp;u</td>
                     </tr>
                     <tr>
                       <td class="indexer"><b>[[localize("electronegativity")]]</b></td>
-                      <td>[[element.electronegativity]]</td>
+                      <td><span class="value-field">[[element.electronegativity]]</span></td>
                     </tr>
                   </table>
                 </div>
@@ -128,11 +133,11 @@
                     </tr>
                     <tr>
                       <td class="indexer"><b>[[localize("boiling point")]]</b></td>
-                      <td>[[displayTemperaturIndication(element.boiling-point, temperatureIndicator)]]</td>
+                      <td><span class="value-field">[[displayTemperaturIndication(element.boiling-point, temperatureIndicator)]]</span></td>
                     </tr>
                     <tr>
                       <td class="indexer"><b>[[localize("melting point")]]</b></td>
-                      <td>[[displayTemperaturIndication(element.melting-point, temperatureIndicator)]]</td>
+                      <td><span class="value-field">[[displayTemperaturIndication(element.melting-point, temperatureIndicator)]]</span></td>
                     </tr>
                   </table>
                 </div>
