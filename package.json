@@ -22,9 +22,9 @@
       "icon": "build/icons/",
       "desktop": 
       {
-        "name": "Elements", 
-        "comment": "An application which displays the periodic table",
-        "category": "Utility"
+        "Name": "Elements", 
+        "Comment": "An application which displays the periodic table",
+        "Categories": "Science;Chemistry;"
       }
     }
   },
