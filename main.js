@@ -8,7 +8,6 @@ const ipcMain = electron.ipcMain;
 const Menu = electron.Menu;
 
 const path = require('path');
-const url = require('url');
 
 let browserWindow = null;
 
