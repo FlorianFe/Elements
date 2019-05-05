@@ -1,5 +1,5 @@
-const { remote } = require('electron')
-const currentWindow = remote.getCurrentWindow();
+
+const currentWindow = require('electron').remote.getCurrentWindow();
 
 class PeriodicTable extends Polymer.Element
 {
