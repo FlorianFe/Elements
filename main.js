@@ -16,7 +16,10 @@ function createWindow() {
   window = new BrowserWindow({
     width: 800,
     height: 545,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
   window.loadURL(path.join('file://', __dirname, 'index.html'));
 
@@ -28,7 +31,7 @@ function createWindow() {
       window.webContents.executeJavaScript(
         `document.getElementById('periodic-table').style.display = '';
         document.getElementsByTagName('body')[0].style.filter = '';`);
-    }, 20);
+    }, 500);
   }
 
   let isRedrawApplied = true;

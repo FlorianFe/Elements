@@ -43,7 +43,7 @@ class PeriodicTable extends Polymer.Element
       {
         this._fullscreen = false;
         this._selectedPage = 2;
-        setTimeout(() => { this._selectedPage = 1 }, 0);
+        setTimeout(() => { this._selectedPage = 1 }, 500);
       }
     });
 
@@ -59,7 +59,7 @@ class PeriodicTable extends Polymer.Element
     Promise.all(
     [
       this._importHref(this.resolveUrl("periodic-table-content/periodic-table-content.html")),
-      new Promise((resolve, reject) => {setTimeout(() => {resolve()}, 3000);})
+      new Promise((resolve, reject) => {setTimeout(() => {resolve()}, 2500);})
     ])
     .then(() =>
     {
