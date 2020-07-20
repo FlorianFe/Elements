@@ -1,6 +1,4 @@
 
-const currentWindow = require('electron').remote.getCurrentWindow();
-
 class PeriodicTable extends Polymer.Element
 {
   static get is() { return 'periodic-table'; }
@@ -31,22 +29,7 @@ class PeriodicTable extends Polymer.Element
   connectedCallback()
   {
     super.connectedCallback();
-
-    currentWindow.on('enter-full-screen', () =>
-    {
-      this._fullscreen = true;
-    });
-
-    currentWindow.on('resize', () => 
-    {
-      if(this._fullscreen)
-      {
-        this._fullscreen = false;
-        this._selectedPage = 2;
-        setTimeout(() => { this._selectedPage = 1 }, 500);
-      }
-    });
-
+    
     this.$["loading-bar-container"].animate(
     [
       { "opacity" : 0.0},

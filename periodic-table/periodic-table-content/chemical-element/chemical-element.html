@@ -14,18 +14,31 @@
     <custom-style>
       <style>
 
-        .element-card
+        :host
         {
+          display: block;
           width: 100%;
           height: 100%;
-          padding: calc(50% - 1em);
-          padding-top: calc(50% - (1em/2));
-          padding-bottom: calc(50% - (1em/2));
+        }
+
+        .element-card
+        {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
           font-size: 3vw;
+          width: 100%;
+          height: 100%;
           font-family: sans-serif;
           color: white;
           text-align: center;
           cursor: pointer;
+        }
+
+        .element-symbol
+        {
+          flex: 0 0;
         }
 
         .element-card:hover
@@ -44,14 +57,25 @@
         .halogen                { background-color: var(--halogen-background-color);                }
         .noble-gas              { background-color: var(--noble-gas-background-color);              }
 
+        .alkali-metal.selected            { background-color: var(--alkali-metal-primary-color);           }
+        .alkaline-earth-metal.selected    { background-color: var(--alkaline-earth-metal-primary-color);   }
+        .transition-metal.selected        { background-color: var(--transition-metal-primary-color);       }
+        .metalloid.selected               { background-color: var(--metalloid-primary-color);              }
+        .post-transition-metal.selected   { background-color: var(--post-transition-metal-primary-color);  }
+        .other-nonmetal.selected          { background-color: var(--other-nonmetal-primary-color);         }
+        .lanthanide.selected              { background-color: var(--lanthanide-primary-color);             }
+        .actinide.selected                { background-color: var(--actinide-primary-color);               }
+        .halogen.selected                 { background-color: var(--halogen-primary-color);                }
+        .noble-gas.selected               { background-color: var(--noble-gas-primary-color);              }
+
         .selected
         {
-          @apply --shadow-elevation-8dp;
+          @apply --shadow-elevation-6dp;
         }
 
         .selected:hover
         {
-          @apply --shadow-elevation-8dp;
+          @apply --shadow-elevation-6dp;
         }
 
       </style>
@@ -61,7 +85,9 @@
       id="paper-card"
       class$="[[element.group]] element-card"
     >
-      [[element.symbol]]
+      <div class="element-symbol">
+        [[element.symbol]]
+      </div>
     </paper-card>
   </template>
 

@@ -12,47 +12,22 @@ const path = require('path');
 
 let window = null;
 
-function createWindow() {
-  window = new BrowserWindow({
+const createWindow = () =>
+{
+  window = new BrowserWindow(
+    {
     width: 800,
-    height: 545,
+    height: 800 * (10.0 / 18.0),
     backgroundColor: '#fff',
-    webPreferences: {
+    webPreferences: 
+    {
       nodeIntegration: true
     }
   });
   window.loadURL(path.join('file://', __dirname, 'index.html'));
 
-  function forceRedraw() {
-    window.webContents.executeJavaScript(
-      `document.getElementById('periodic-table').style.display = 'none';`);
-
-    setTimeout(() => {
-      window.webContents.executeJavaScript(
-        `document.getElementById('periodic-table').style.display = '';
-        document.getElementsByTagName('body')[0].style.filter = '';`);
-    }, 500);
-  }
-
-  let isRedrawApplied = true;
-  const debouncedRedraw = debounce(() => {
-    isRedrawApplied = true;
-    forceRedraw();
-  }, 200);
-
-  window.on('maximize', () => {
-    isRedrawApplied = false;
-  });
-
-  window.on('move', () => {
-    if (!window.isMaximized() && !isRedrawApplied) {
-      window.webContents.executeJavaScript(
-        `document.getElementsByTagName('body')[0].style.filter = 'blur(5px)';`);
-      debouncedRedraw();
-    }
-  });
-
-  window.on('closed', () => {
+  window.on('closed', () => 
+  {
     window = null;
   });
 
@@ -104,8 +79,10 @@ function createWindow() {
       }
     ]
 
-  if (process.platform === 'darwin') {
-    template.unshift({
+  if (process.platform === 'darwin') 
+  {
+    template.unshift(
+    {
       label: app.getName(),
       submenu: [
         { role: 'about' },
@@ -147,11 +124,13 @@ function createWindow() {
 }
 
 
-app.on('ready', () => {
+app.on('ready', () => 
+{
   createWindow();
 });
 
-app.on('activate', function () {
+app.on('activate', () =>
+{
   if (window === null) {
     createWindow()
   }
