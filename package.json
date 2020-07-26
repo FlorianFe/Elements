@@ -1,5 +1,5 @@
 {
-  "name": "elements",
+  "name": "Elements",
   "version": "1.2.0",
   "description": "A periodic table viewer desktop app",
   "main": "main.js",
