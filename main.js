@@ -1,11 +1,7 @@
 const electron = require('electron');
 const debounce = require('lodash.debounce')
 
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow;
-const globalShortcut = electron.globalShortcut;
-const ipcMain = electron.ipcMain;
-
+const { app, screen, BrowserWindow, globalShortcut, ipcMain} = electron;
 const { floor } = Math;
 
 const Menu = electron.Menu;
@@ -14,18 +10,20 @@ const path = require('path');
 
 let window = null;
 
-const WINDOW_START_WIDTH = 800;
-const WINDOW_MIN_WIDTH = 400;
 const ASPECT_RATIO = (10.0 / 18.0);
-const HEAD_SECTION_HEIGHT = 75;
+const HEAD_SECTION_HEIGHT = 100;
 
 const createWindow = () =>
 {
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+  const windowMinWidth = floor(width * 0.3);
+  const windowStartWidth = floor(width * 0.7);
+
   window = new BrowserWindow(
   {
-    minWidth: WINDOW_MIN_WIDTH,
-    width: WINDOW_START_WIDTH,
-    height: floor(WINDOW_START_WIDTH * ASPECT_RATIO) + HEAD_SECTION_HEIGHT,
+    minWidth: windowMinWidth,
+    width: windowStartWidth,
+    height: floor(windowStartWidth * ASPECT_RATIO) + HEAD_SECTION_HEIGHT,
     backgroundColor: '#fff',
     webPreferences: 
     {
