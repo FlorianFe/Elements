@@ -21,6 +21,12 @@ class SettingsDialog extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior
         value: "k",
         notify: true
       },
+      display:
+      {
+        type: String,
+        value: "light",
+        notify: true
+      },
       colors:
       {
         type: Object,
@@ -139,6 +145,23 @@ class SettingsDialog extends Polymer.mixinBehaviors([Polymer.AppLocalizeBehavior
            event.preventDefault();
            shell.openExternal(event.target.href);
       });
+    });
+
+    this.shadowRoot.querySelector('.display-selection').addEventListener('selected-changed', () => 
+    {
+      if(this.display == 'light')
+      {
+        document.documentElement.style.setProperty('--primary-color', '#888');
+        document.documentElement.style.setProperty('--secondary-color', '#000');
+        document.documentElement.style.setProperty('--background-color', '#fff');
+      }
+
+      if(this.display == 'dark')
+      {
+        document.documentElement.style.setProperty('--primary-color', '#eee');
+        document.documentElement.style.setProperty('--secondary-color', '#fff');
+        document.documentElement.style.setProperty('--background-color', '#333');
+      }
     });
   }
 

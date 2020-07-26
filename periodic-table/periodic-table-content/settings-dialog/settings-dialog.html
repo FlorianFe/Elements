@@ -32,21 +32,14 @@
         :host
         {
           display: block;
+
+          color: var(--primary-color);
+          background-color: var(--background-color);
         }
 
         language-selection
         {
-          color: #888;
           text-align: left;
-
-          --paper-item-focused:
-          {
-            background: #fff;
-          };
-          --paper-item-focused-before:
-          {
-            opacity: 0;
-          };
 
           cursor: pointer;
           width: 100%;
@@ -54,18 +47,30 @@
 
         a
         {
-          color: #aaa;
+          color: var(--primary-color);
           text-decoration: none;
         }
 
         paper-listbox
         {
+          background-color: var(--background-color);
           cursor: pointer;
           width: 100%;
         }
 
+        paper-item
+        {
+          color: var(--primary-color);
+          background-color: var(--background-color);
+        }
+
         paper-dropdown-menu
         {
+          --paper-input-container-input: 
+          {
+            color: var(--secondary-color);
+          };
+         
           width: 100%;
         }
 
@@ -87,6 +92,8 @@
         paper-dialog
         {
           width: 30%;
+          color: var(--text-color);
+          background-color: var(--background-color);
         }
 
         .ok-button
@@ -114,6 +121,13 @@
             <paper-item value="k">Kelvin(K)</paper-item>
             <paper-item value="f">Fahrenheit(°F)</paper-item>
             <paper-item value="c">Celsius(°C)</paper-item>
+          </paper-listbox>
+        </paper-dropdown-menu>
+
+        <paper-dropdown-menu label='[[localize("display")]]'>
+          <paper-listbox class="display-selection" slot="dropdown-content" attr-for-selected="value" selected="{{display}}">
+            <paper-item value="light">Light</paper-item>
+            <paper-item value="dark">Dark</paper-item>
           </paper-listbox>
         </paper-dropdown-menu>
       </div>

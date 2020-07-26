@@ -19,24 +19,37 @@
         :host
         {
           display: block;
+          background-color: var(--background-color);
         }
 
         paper-dropdown-menu
         {
           width: 100%;
-          color: inherit;
+          background-color: var(--background-color);
+
+          --paper-input-container-input: 
+          {
+            color: var(--secondary-color);
+          };
         }
 
         paper-listbox
         {
           height: 200px;
+          background-color: var(--background-color);
         }
 
         paper-icon-item
         {
-          color: #888;
+          color: var(--primary-color);
+          background-color: var(--background-color);
         }
 
+        paper-icon-item.focused
+        {
+          color: var(--primary-color);
+          background-color: var(--secondary-color);
+        }
 
       </style>
     </custom-style>

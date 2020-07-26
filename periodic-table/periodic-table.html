@@ -22,7 +22,7 @@
         h1
         {
           @apply --paper-font-common-base;
-          color: #888;
+          color: var(--primary-color);
         }
 
         #chemical-element-visualisation-container
@@ -43,6 +43,11 @@
         iron-pages
         {
           height: 100%;
+        }
+
+        chemical-element-visualisation
+        {
+          --chemical-element-visualisation-background-color: var(--background-color);
         }
 
       </style>

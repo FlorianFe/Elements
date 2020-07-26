@@ -4,6 +4,7 @@
     "settings": "Settings",
     "language": "Language",
     "temperature" : "Temperature",
+    "display" : "Display",
 
     "alkali metal": "alkali metal",
     "alkaline earth metal": "alkaline earth metal",
@@ -21,6 +22,7 @@
     "settings": "Einstellungen",
     "language": "Sprache",
     "temperature" : "Temperatur",
+    "display" : "Anzeige",
 
     "alkali metal": "Alkalimetall",
     "alkaline earth metal": "Erdalkalimetall",
@@ -38,6 +40,7 @@
     "settings": "Paramètres",
     "language": "Langue",
     "temperature" : "Température",
+    "display" : "Display",
 
     "alkali metal": "Métal alcalin",
     "alkaline earth metal": "métal alcalino-terreux",
@@ -55,6 +58,7 @@
     "settings": "Configurações",
     "language": "idioma",
     "temperature" : "temperatura",
+    "display" : "Display",
 
     "alkali metal": "Metal alcalino",
     "alkaline earth metal": "metal alcalino-terroso",
@@ -72,6 +76,7 @@
     "settings": "Ajustes",
     "language": "idioma",
     "temperature" : "temperatura",
+    "display" : "Display",
 
     "alkali metal": "???",
     "alkaline earth metal": "???",
@@ -89,6 +94,7 @@
     "settings": "ayarlar",
     "language": "dil",
     "temperature" : "sıcaklık",
+    "display" : "Display",
 
     "alkali metal": "???",
     "alkaline earth metal": "???",
@@ -106,6 +112,7 @@
     "settings": "सेटिंग्स",
     "language": "भाषा",
     "temperature" : "तापमान",
+    "display" : "Display",
 
     "alkali metal": "???",
     "alkaline earth metal": "???",
@@ -123,6 +130,7 @@
     "settings": "设置",
     "language": "语言",
     "temperature" : "温度",
+    "display" : "Display",
 
     "alkali metal": "???",
     "alkaline earth metal": "???",
@@ -140,6 +148,7 @@
     "settings": "nastavení",
     "language": "český",
     "temperature" : "teplota",
+    "display" : "Display",
 
     "alkali metal": "???",
     "alkaline earth metal": "???",
@@ -157,6 +166,7 @@
     "settings": "настройки",
     "language": "язык",
     "temperature" : "температура",
+    "display" : "Display",
 
     "alkali metal": "???",
     "alkaline earth metal": "???",
@@ -174,6 +184,7 @@
     "settings": "Ustawienia",
     "language": "Język",
     "temperature" : "Temperatura",
+    "display" : "Display",
 
     "alkali metal": "metal alkaliczny",
     "alkaline earth metal": "metal ziem alkalicznych",
