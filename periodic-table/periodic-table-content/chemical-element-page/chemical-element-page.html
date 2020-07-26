@@ -18,11 +18,21 @@
     <custom-style>
       <style>
 
+        :host
+        {
+          font-size: 0.5vw;
+        }
+
         paper-card
         {
           width: 100%;
           height: 100%;
           padding: 0.25vw;
+        }
+
+        .element-name
+        {
+          font-size: 1vw;
         }
 
         .container
@@ -40,13 +50,13 @@
         .item-3x
         {
           flex: 3;
-          padding: 0.2vw;
+          padding: 0.5vw;
         }
 
         .item-5x
         {
           flex: 5;
-          padding: 0.5vw;
+          padding: 2vw;
           color: #888;
         }
 
@@ -54,6 +64,7 @@
         {
           font-size: 0.9vw;
           width: 100%;
+          border-spacing: 0.1vw;
         }
 
         b
@@ -63,6 +74,7 @@
 
         td
         {
+          border-width: 0.1vw;
           width: 33%;
         }
 
@@ -102,7 +114,7 @@
               <table>
                 <tr>
                   <td class="indexer">
-                    <big><big><b class$="[[element.group]]">[[localize(element.name)]]</b></big></big>
+                    <b class$="[[element.group]] element-name">[[localize(element.name)]]</b>
                     <!---
                     &nbsp;
                     <iron-icon id="copy-to-clipboard-icon" icon="icons:content-copy"></iron-icon>

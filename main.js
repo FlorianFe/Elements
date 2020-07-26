@@ -6,18 +6,26 @@ const BrowserWindow = electron.BrowserWindow;
 const globalShortcut = electron.globalShortcut;
 const ipcMain = electron.ipcMain;
 
+const { floor } = Math;
+
 const Menu = electron.Menu;
 
 const path = require('path');
 
 let window = null;
 
+const WINDOW_START_WIDTH = 800;
+const WINDOW_MIN_WIDTH = 400;
+const ASPECT_RATIO = (10.0 / 18.0);
+const HEAD_SECTION_HEIGHT = 75;
+
 const createWindow = () =>
 {
   window = new BrowserWindow(
-    {
-    width: 800,
-    height: 800 * (10.0 / 18.0),
+  {
+    minWidth: WINDOW_MIN_WIDTH,
+    width: WINDOW_START_WIDTH,
+    height: floor(WINDOW_START_WIDTH * ASPECT_RATIO) + HEAD_SECTION_HEIGHT,
     backgroundColor: '#fff',
     webPreferences: 
     {

@@ -5,6 +5,7 @@
 
 <link rel="import" href="../../../bower_components/app-localize-behavior/app-localize-behavior.html">
 <link rel="import" href="../../../bower_components/app-layout/app-drawer/app-drawer.html">
+<link rel="import" href="../../../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../../../bower_components/paper-item/paper-item.html">
 <link rel="import" href="../../../bower_components/paper-item/paper-icon-item.html">
 <link rel="import" href="../../../bower_components/paper-listbox/paper-listbox.html">
@@ -88,6 +89,11 @@
           width: 30%;
         }
 
+        .ok-button
+        {
+          float: right;
+        }
+
       </style>
     </custom-style>
 
@@ -112,6 +118,8 @@
         </paper-dropdown-menu>
       </div>
       
+      <paper-button class="ok-button" dialog-confirm autofocus>Ok</paper-button>
+
     </paper-dialog>
 
   </template>

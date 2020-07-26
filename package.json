@@ -1,12 +1,12 @@
 {
-  "name": "Elements",
-  "version": "1.1.6",
+  "name": "elements",
+  "version": "1.2.0",
   "description": "A periodic table viewer desktop app",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "build --dir",
-    "dist": "build"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "build": {
     "appId": "de.florianfe.elements",
@@ -43,11 +43,11 @@
   },
   "license": "CC-0",
   "devDependencies": {
-    "electron": "^7.2.4",
-    "electron-builder": "^21.2.0"
+    "electron": "^9.1.1",
+    "electron-builder": "^22.7.0"
   },
   "dependencies": {
-    "electron-localshortcut": "^3.1.0",
+    "electron-localshortcut": "^3.2.1",
     "ipc": "0.0.1",
     "lodash.debounce": "^4.0.8",
     "path": "^0.12.7"

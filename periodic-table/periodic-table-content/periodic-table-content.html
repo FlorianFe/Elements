@@ -49,7 +49,9 @@
         .table-container
         {
           width: 100%;
-          height: calc(100vw * (10.0/18.0)); /* enforce squares */
+
+          /* IMPORTANT: enforces squares for the elements! */
+          height: calc(100vw * (10.0/18.0)); 
           
           display: grid;
           grid-auto-rows: 1fr;
@@ -101,15 +103,14 @@
           font-size: 1em;
           color: white;
           text-align: center;
-          cursor: pointer;
         }
 
-        .lan­thanide
+        paper-card.lan­thanide
         {
           background-color: var(--lanthanide-background-color);
         }
 
-        .actinide
+        paper-card.actinide
         {
           background-color: var(--actinide-background-color);
         }
