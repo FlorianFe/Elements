@@ -33,7 +33,7 @@ npm run-script dist
 
 <img alt="screenshot_1" src="https://user-images.githubusercontent.com/19766850/88542788-480f2a00-d017-11ea-8ccf-2a93d26dd6d1.png">
 <img alt="screenshot_2" src="https://user-images.githubusercontent.com/19766850/88542791-49405700-d017-11ea-9466-f429940bb01b.png">
-<img alt="screenshot_3" src="https://user-images.githubusercontent.com/19766850/88542795-4a718400-d017-11ea-8946-928594e0705e.png">
+<img alt="screenshot_3" src="https://user-images.githubusercontent.com/19766850/88544757-2a8f8f80-d01a-11ea-90c0-5cc60af53bcd.png">
 
 ## 💾 Download
 
