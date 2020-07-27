@@ -15,7 +15,12 @@ class PeriodicTableContent extends Polymer.Element
         value: "h"
       },
       language: String,
-      temperatureIndicator: String
+      temperatureIndicator: String,
+      display:
+      {
+        type: String,
+        notify: true
+      }
     }
   }
 

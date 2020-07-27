@@ -10,6 +10,15 @@ class PeriodicTable extends Polymer.Element
       {
         type: Number,
         value: 0
+      },
+      display:
+      {
+        type: String,
+        observer(newValue, oldValue) {
+          
+          console.log(newValue);
+          this._updateCSSVariables();
+        }
       }
     }
   }
@@ -82,6 +91,23 @@ class PeriodicTable extends Polymer.Element
     ];
 
     return symbols[Math.floor(Math.random() * symbols.length)];
+  }
+
+  _updateCSSVariables()
+  {
+    if(this.display == 'light')
+    {
+      document.documentElement.style.setProperty('--primary-color', '#888');
+      document.documentElement.style.setProperty('--secondary-color', '#000');
+      document.documentElement.style.setProperty('--background-color', '#fff');
+    }
+
+    if(this.display == 'dark')
+    {
+      document.documentElement.style.setProperty('--primary-color', '#eee');
+      document.documentElement.style.setProperty('--secondary-color', '#fff');
+      document.documentElement.style.setProperty('--background-color', '#333');
+    }
   }
 
   _importHref(href)
