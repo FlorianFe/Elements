@@ -31,9 +31,9 @@ npm run-script dist
 
 ## 🖼 Preview
 
-![screenshot 1](https://florianfe.github.io/screenshots/elements/screenshot-1.png)
-![screenshot 2](https://florianfe.github.io/screenshots/elements/screenshot-2.png)
-![screenshot 3](https://florianfe.github.io/screenshots/elements/screenshot-3.png)
+<img alt="screenshot_1" src="https://user-images.githubusercontent.com/19766850/88542788-480f2a00-d017-11ea-8ccf-2a93d26dd6d1.png">
+<img alt="screenshot_2" src="https://user-images.githubusercontent.com/19766850/88542791-49405700-d017-11ea-9466-f429940bb01b.png">
+<img alt="screenshot_3" src="https://user-images.githubusercontent.com/19766850/88542795-4a718400-d017-11ea-8946-928594e0705e.png">
 
 ## 💾 Download
 
@@ -45,13 +45,13 @@ npm run-script dist
   </tr>
   <tr>
     <td>Mac</td>
-    <td>1.1.6</td>
-    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.6/Elements.dmg">Download</a></td>
+    <td>1.2.0</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.2.0/Elements.dmg">Download</a></td>
   </tr>
   <tr>
     <td>Windows</td>
-    <td>1.1.6</td>
-    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.6/Elements.exe">Download</a></td>
+    <td>1.2.0</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.2.0/Elements.exe">Download</a></td>
   </tr>
   <tr>
     <td>Linux (.deb)</td>
