@@ -17,7 +17,7 @@ class ChemicalElement extends Polymer.Element
 
   static get observers()
   {
-    return ['_onSelectedSymbolChange(selectedSymbol)'];
+    return ['_updateSelectedClass(selectedSymbol)'];
   }
 
   constructor()
@@ -37,9 +37,11 @@ class ChemicalElement extends Polymer.Element
     {
       this.dispatchEvent(new CustomEvent('chemical-element-selected', {detail: {symbol: this.symbol}}));
     });
+
+    this._updateSelectedClass();
   }
 
-  _onSelectedSymbolChange()
+  _updateSelectedClass()
   {
     if(this.selectedSymbol === this.symbol)
     {

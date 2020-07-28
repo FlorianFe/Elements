@@ -20,7 +20,7 @@
 
         :host
         {
-          font-size: 0.5vw;
+          font-size: 1.1vw;
 
           background-color: var(--background-color);
           color: var(--text-color);
@@ -38,7 +38,7 @@
 
         .element-name
         {
-          font-size: 1vw;
+          font-size: 1.5vw;
         }
 
         .container
@@ -48,10 +48,12 @@
           width: 100%;
         }
 
+        
         .value-field
         {
-          user-select: text; 
+           user-select: text; 
         }
+        
 
         .item-3x
         {
@@ -62,25 +64,24 @@
         .item-5x
         {
           flex: 5;
-          padding: 2vw;
+          padding: 1.5vw;
         }
 
         table
         {
-          font-size: 0.9vw;
           width: 100%;
           border-spacing: 0.1vw;
-        }
-
-        b
-        {
-          font-size: 0.9vw;
         }
 
         td
         {
           border-width: 0.1vw;
           width: 33%;
+        }
+
+        .blank
+        {
+          height: 0.5vw;
         }
 
         td.indexer
@@ -132,8 +133,8 @@
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td class="indexer"></td>
-                  <td>&nbsp;</td>
+                  <td class="indexer blank"></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td class="indexer"><b>[[localize("atomic number")]]</b></td>
@@ -148,8 +149,8 @@
                   <td><span class="value-field">[[element.electronegativity]]</span></td>
                 </tr>
                 <tr>
-                  <td class="indexer"></td>
-                  <td>&nbsp;</td>
+                  <td class="indexer blank"></td>
+                  <td></td>
                 </tr>
                 <tr>
                   <td class="indexer"><b>[[localize("boiling point")]]</b></td>

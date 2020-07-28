@@ -15,8 +15,6 @@ class PeriodicTable extends Polymer.Element
       {
         type: String,
         observer(newValue, oldValue) {
-          
-          console.log(newValue);
           this._updateCSSVariables();
         }
       }

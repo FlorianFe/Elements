@@ -11,7 +11,6 @@
     "polymer",
     "electron"
   ],
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -35,6 +34,7 @@
     "app-storage": "^2.0.2",
     "paper-dialog": "PolymerElements/paper-dialog#^2.0.1",
     "web-animations-js": "^2.3.1",
-    "paper-button": "^2.0.0"
+    "paper-button": "^2.0.0",
+    "iron-a11y-keys-behavior": "^2.0.0"
   }
 }
