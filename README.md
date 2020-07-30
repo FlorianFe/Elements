@@ -55,13 +55,13 @@ npm run-script dist
   </tr>
   <tr>
     <td>Linux (.deb)</td>
-    <td>1.1.6</td>
-    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.6/Elements.deb">Download</a></td>
+    <td>1.2.1</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.2.1/Elements.deb">Download</a></td>
   </tr>
   <tr>
     <td>Linux (.AppImage)</td>
-    <td>1.1.6</td>
-    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.1.6/Elements.AppImage">Download</a></td>
+    <td>1.2.1</td>
+    <td><a href="https://github.com/FlorianFe/Elements/releases/download/v1.2.1/Elements.AppImage">Download</a></td>
   </tr>
 </table>
 
