@@ -5,8 +5,10 @@
     A desktop App which displays the periodic table<br>
     It's using the <a href="https://github.com/FlorianFe/chemical-element-visualisation">&lt;chemical-element-visualisation&gt;</a> Web Component
     <br><br>
-    <a href="http://forthebadge.com"><img alt="forthebadge" src="http://forthebadge.com/images/badges/built-with-love.svg"></a> 
-    <a href="http://forthebadge.com"><img alt="forthebadge" src="http://forthebadge.com/images/badges/uses-js.svg"></a>
+    <img alt="build-with-love" src="http://forthebadge.com/images/badges/built-with-love.svg">
+    <img alt="uses-js" src="http://forthebadge.com/images/badges/uses-js.svg">
+    <br>
+    <img alt="download-count" src="https://img.shields.io/github/downloads/FlorianFe/Elements/total.svg?color=blue&style=for-the-badge">
   </p>
 </p>
 
