@@ -43,7 +43,7 @@
   },
   "license": "CC-0",
   "devDependencies": {
-    "electron": "^9.4.0",
+    "electron": "^11.5.0",
     "electron-builder": "^22.7.0"
   },
   "dependencies": {
