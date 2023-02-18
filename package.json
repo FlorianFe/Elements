@@ -43,8 +43,8 @@
   },
   "license": "CC-0",
   "devDependencies": {
-    "electron": "^13.6.6",
-    "electron-builder": "^22.7.0"
+    "electron": "^23.1.0",
+    "electron-builder": "^23.6.0"
   },
   "dependencies": {
     "electron-localshortcut": "^3.2.1",
